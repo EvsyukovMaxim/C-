@@ -16,8 +16,8 @@ namespace Byte
             int c, d;
             a = Convert.ToByte(n);
             b = Convert.ToByte(i);
-            c = (a >> b);
-            d = (c & 1);
+            c = a >> b;
+            d = c & 1;
             Convert.ToString(d);
             Console.WriteLine(d);
             Console.ReadKey();
