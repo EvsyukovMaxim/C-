@@ -1,0 +1,6 @@
+D:\Repository_GitHub\CS\Byte\bin\Debug\Byte.exe.config
+D:\Repository_GitHub\CS\Byte\bin\Debug\Byte.exe
+D:\Repository_GitHub\CS\Byte\bin\Debug\Byte.pdb
+D:\Repository_GitHub\CS\Byte\obj\Debug\Byte.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\Byte\obj\Debug\Byte.exe
+D:\Repository_GitHub\CS\Byte\obj\Debug\Byte.pdb

@@ -1,0 +1,6 @@
+D:\Repository_GitHub\CS\a+b\bin\Debug\a+b.exe.config
+D:\Repository_GitHub\CS\a+b\bin\Debug\a+b.exe
+D:\Repository_GitHub\CS\a+b\bin\Debug\a+b.pdb
+D:\Repository_GitHub\CS\a+b\obj\Debug\a+b.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\a+b\obj\Debug\a+b.exe
+D:\Repository_GitHub\CS\a+b\obj\Debug\a+b.pdb
