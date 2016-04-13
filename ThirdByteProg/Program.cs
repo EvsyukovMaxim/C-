@@ -10,14 +10,10 @@ namespace Byte
     {
         static void Main(string[] args)
         {
-            string a = Console.ReadLine();
-            int x, z;
-            x = Convert.ToByte(a);
-            Console.WriteLine(x);
-            Console.ReadKey();
-            z = x & (x/2);
-            Console.WriteLine(z);
-            Console.ReadKey();
+            int a, b;
+            a = Convert.ToByte(Console.ReadLine());
+            b = a/2;
+            Console.WriteLine(b);
         }
     }
 }

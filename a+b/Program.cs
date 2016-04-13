@@ -11,8 +11,7 @@ namespace a_b
         static void Main(string[] args)
         {
             int x = Convert.ToInt32(Console.ReadLine()) + Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(x);
-            Console.ReadKey();
+            Console.WriteLine(x);            
         }
     }
 }

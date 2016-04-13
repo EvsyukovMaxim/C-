@@ -13,8 +13,7 @@ namespace Byte
             int a,b;                        
             a = Convert.ToByte(Console.ReadLine()) >> Convert.ToByte(Console.ReadLine());
             b = a & 1;
-            Console.WriteLine(b);
-            Console.ReadKey();
+            Console.WriteLine(b);            
         }
     }
 }
