@@ -12,7 +12,7 @@ namespace Byte
         {
             int a, b;
             a = Convert.ToByte(Console.ReadLine());
-            b = a/2;
+            b=a&(a-1);
             Console.WriteLine(b);
         }
     }
