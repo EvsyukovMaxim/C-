@@ -14,6 +14,7 @@ namespace Byte
             a = Convert.ToByte(Console.ReadLine());
             b=a&(a-1);
             Console.WriteLine(b);
+            //Don't know, how to do else
         }
     }
 }
