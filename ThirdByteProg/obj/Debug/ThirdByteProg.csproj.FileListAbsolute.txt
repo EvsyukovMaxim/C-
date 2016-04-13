@@ -3,3 +3,4 @@ D:\Repository_GitHub\CS\ThirdByteProg\bin\Debug\ThirdByteProg.exe
 D:\Repository_GitHub\CS\ThirdByteProg\bin\Debug\ThirdByteProg.pdb
 D:\Repository_GitHub\CS\ThirdByteProg\obj\Debug\ThirdByteProg.exe
 D:\Repository_GitHub\CS\ThirdByteProg\obj\Debug\ThirdByteProg.pdb
+D:\Repository_GitHub\CS\ThirdByteProg\obj\Debug\ThirdByteProg.csprojResolveAssemblyReference.cache

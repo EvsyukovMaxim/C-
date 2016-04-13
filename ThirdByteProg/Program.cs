@@ -13,10 +13,11 @@ namespace Byte
             string a = Console.ReadLine();
             int x, z;
             x = Convert.ToByte(a);
+            Console.WriteLine(x);
+            Console.ReadKey();
             z = x & (x/2);
             Console.WriteLine(z);
             Console.ReadKey();
-
         }
     }
 }

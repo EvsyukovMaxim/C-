@@ -10,18 +10,11 @@ namespace Byte
     {
         static void Main(string[] args)
         {
-            string n = Console.ReadLine();
-            string i = Console.ReadLine();
-            int a, b;
-            int c, d;
-            a = Convert.ToByte(n);
-            b = Convert.ToByte(i);
-            c = a >> b;
-            d = c & 1;
-            Convert.ToString(d);
-            Console.WriteLine(d);
+            int a,b;                        
+            a = Convert.ToByte(Console.ReadLine()) >> Convert.ToByte(Console.ReadLine());
+            b = a & 1;
+            Console.WriteLine(b);
             Console.ReadKey();
-
         }
     }
 }

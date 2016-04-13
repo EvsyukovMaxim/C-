@@ -10,14 +10,9 @@ namespace a_b
     {
         static void Main(string[] args)
         {
-            string a = Console.ReadLine();
-            string b = Console.ReadLine();
-            int c = Convert.ToInt32(a);
-            int d = Convert.ToInt32(b);
-            int x = c + d;
+            int x = Convert.ToInt32(Console.ReadLine()) + Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(x);
             Console.ReadKey();
-
         }
     }
 }
