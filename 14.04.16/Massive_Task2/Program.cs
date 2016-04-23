@@ -12,10 +12,9 @@ namespace For_Task1
         {
             int n = Convert.ToInt32(Console.ReadLine());
             int[] numbers = new int [n];
-            int a;
             for (int i = 0; i < n; i++)
             {
-                a = Convert.ToInt32(Console.ReadLine());
+                int a = Convert.ToInt32(Console.ReadLine());
                 numbers[i] = a;
             }
 
