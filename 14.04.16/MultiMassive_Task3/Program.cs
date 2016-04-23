@@ -26,9 +26,7 @@ namespace For_Task1
                     matrix1[i, j] = a;
                     matrix2[i, j] = a;
                     matrix3[i, j] = a + a;
-
-                }
-                
+                }   
             }
 
             //Выводим на консоль заполненную 1-ую матрицу
@@ -53,7 +51,6 @@ namespace For_Task1
                 Console.WriteLine();
             }
 
-
             //Печатаем итог сложения двух матриц
             Console.WriteLine("the third SUM Matrix");
             for (int i = 0; i < n; i++)
@@ -64,8 +61,6 @@ namespace For_Task1
                 }
                 Console.WriteLine();
             }
-
-
         }
     }
 }

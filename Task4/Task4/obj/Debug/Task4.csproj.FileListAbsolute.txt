@@ -1,0 +1,5 @@
+D:\Repository_GitHub\CS\14.04.16\Task4\Task4\bin\Debug\Task4.exe.config
+D:\Repository_GitHub\CS\14.04.16\Task4\Task4\bin\Debug\Task4.exe
+D:\Repository_GitHub\CS\14.04.16\Task4\Task4\bin\Debug\Task4.pdb
+D:\Repository_GitHub\CS\14.04.16\Task4\Task4\obj\Debug\Task4.exe
+D:\Repository_GitHub\CS\14.04.16\Task4\Task4\obj\Debug\Task4.pdb
