@@ -1,0 +1,6 @@
+D:\Repository_GitHub\CS\14.04.16\MultiMassive_Task3\bin\Debug\MultiMassive_Task3.exe.config
+D:\Repository_GitHub\CS\14.04.16\MultiMassive_Task3\bin\Debug\MultiMassive_Task3.exe
+D:\Repository_GitHub\CS\14.04.16\MultiMassive_Task3\bin\Debug\MultiMassive_Task3.pdb
+D:\Repository_GitHub\CS\14.04.16\MultiMassive_Task3\obj\Debug\MultiMassive_Task3.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\14.04.16\MultiMassive_Task3\obj\Debug\MultiMassive_Task3.exe
+D:\Repository_GitHub\CS\14.04.16\MultiMassive_Task3\obj\Debug\MultiMassive_Task3.pdb
