@@ -27,10 +27,10 @@ namespace For_Task1
                     matrix1[i, j] = a;
                     RowMatrix[j] = a;
                 }
-                MinValue [i] = FindMinValue(RowMatrix[i]);
+                MinValue [i] = FindMinValue(RowMatrix);
             }
 
-            Console.WriteLine("matrx Print");
+            Console.WriteLine("Вся матрица:");
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
@@ -40,23 +40,18 @@ namespace For_Task1
                 Console.WriteLine();
             }
 
-            Console.WriteLine("RowMatrix Array");
-            for (int i = 0; i < m; i++)
-            {
-                Console.Write(RowMatrix[i] + " ");
-            }
-
-            Array.Reverse(MinValue);
-
             //Выводим на консоль заполненный массив с минимальными значениями
-            Console.WriteLine("minValue Array");
+            Console.WriteLine("\n");
+            Console.WriteLine("Минимальные значения каждой строки Матрицы:");
+            Array.Sort(MinValue);
+            Array.Reverse(MinValue);
             for (int i = 0; i < n; i++)
             {
                 Console.Write(MinValue[i] + " ");
             }
 
         }
-        public int FindMinValue(int[] array)
+        public static int FindMinValue(int[] array)
         {
             int min = 0;
             int max = 0;
