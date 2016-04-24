@@ -1,0 +1,11 @@
+D:\Repository_GitHub\CS\14.04.16\Task5\bin\Debug\Task5.exe.config
+D:\Repository_GitHub\CS\14.04.16\Task5\bin\Debug\Task5.exe
+D:\Repository_GitHub\CS\14.04.16\Task5\bin\Debug\Task5.pdb
+D:\Repository_GitHub\CS\14.04.16\Task5\obj\Debug\Task5.exe
+D:\Repository_GitHub\CS\14.04.16\Task5\obj\Debug\Task5.pdb
+D:\Repository_GitHub\CS\14.04.16\Task5_Matrix_MinValue\bin\Debug\Task5.exe.config
+D:\Repository_GitHub\CS\14.04.16\Task5_Matrix_MinValue\obj\Debug\Task5.exe
+D:\Repository_GitHub\CS\14.04.16\Task5_Matrix_MinValue\obj\Debug\Task5.pdb
+D:\Repository_GitHub\CS\14.04.16\Task5_Matrix_MinValue\bin\Debug\Task5.exe
+D:\Repository_GitHub\CS\14.04.16\Task5_Matrix_MinValue\bin\Debug\Task5.pdb
+D:\Repository_GitHub\CS\14.04.16\Task5_Matrix_MinValue\obj\Debug\Task5.csprojResolveAssemblyReference.cache

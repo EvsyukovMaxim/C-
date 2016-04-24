@@ -1,0 +1,21 @@
+c:\users\m.evsyukov\documents\visual studio 2015\Projects\For_Task1\bin\Debug\For_Task1.exe.config
+c:\users\m.evsyukov\documents\visual studio 2015\Projects\For_Task1\bin\Debug\For_Task1.exe
+c:\users\m.evsyukov\documents\visual studio 2015\Projects\For_Task1\bin\Debug\For_Task1.pdb
+c:\users\m.evsyukov\documents\visual studio 2015\Projects\For_Task1\obj\Debug\For_Task1.csprojResolveAssemblyReference.cache
+c:\users\m.evsyukov\documents\visual studio 2015\Projects\For_Task1\obj\Debug\For_Task1.exe
+c:\users\m.evsyukov\documents\visual studio 2015\Projects\For_Task1\obj\Debug\For_Task1.pdb
+D:\Repository_GitHub\CS\For_Task1\bin\Debug\For_Task1.exe.config
+D:\Repository_GitHub\CS\For_Task1\obj\Debug\For_Task1.exe
+D:\Repository_GitHub\CS\For_Task1\obj\Debug\For_Task1.pdb
+D:\Repository_GitHub\CS\For_Task1\bin\Debug\For_Task1.exe
+D:\Repository_GitHub\CS\For_Task1\bin\Debug\For_Task1.pdb
+D:\Repository_GitHub\CS\For_Task1\obj\Debug\For_Task1.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\14.04.16\For_Task1\bin\Debug\For_Task1.exe.config
+D:\Repository_GitHub\CS\14.04.16\For_Task1\obj\Debug\For_Task1.exe
+D:\Repository_GitHub\CS\14.04.16\For_Task1\obj\Debug\For_Task1.pdb
+D:\Repository_GitHub\CS\14.04.16\For_Task1\bin\Debug\For_Task1.exe
+D:\Repository_GitHub\CS\14.04.16\For_Task1\bin\Debug\For_Task1.pdb
+D:\Repository_GitHub\CS\14.04.16\For_Task1\obj\Debug\For_Task1.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\14.04.16\Task1_For\bin\Debug\For_Task1.exe.config
+D:\Repository_GitHub\CS\14.04.16\Task1_For\obj\Debug\For_Task1.exe
+D:\Repository_GitHub\CS\14.04.16\Task1_For\obj\Debug\For_Task1.pdb
