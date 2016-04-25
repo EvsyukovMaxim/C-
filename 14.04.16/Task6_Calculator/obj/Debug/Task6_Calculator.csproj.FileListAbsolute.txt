@@ -1,1 +1,6 @@
 D:\Repository_GitHub\CS\14.04.16\Task6_Calculator\bin\Debug\Task6_Calculator.exe.config
+D:\Repository_GitHub\CS\14.04.16\Task6_Calculator\obj\Debug\Task6_Calculator.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\14.04.16\Task6_Calculator\bin\Debug\Task6_Calculator.exe
+D:\Repository_GitHub\CS\14.04.16\Task6_Calculator\bin\Debug\Task6_Calculator.pdb
+D:\Repository_GitHub\CS\14.04.16\Task6_Calculator\obj\Debug\Task6_Calculator.exe
+D:\Repository_GitHub\CS\14.04.16\Task6_Calculator\obj\Debug\Task6_Calculator.pdb
