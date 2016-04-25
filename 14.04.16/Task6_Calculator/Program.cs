@@ -19,11 +19,11 @@ namespace Task6_Calculator
             {
                 case 0:
                     int plus = a + b;
-                    Console.WriteLine("case 0");
+                    Console.WriteLine(plus);
                     break;  
                 case 1:
                     int multiplication = a * b;
-                    Console.WriteLine("case 1");
+                    Console.WriteLine(multiplication);
                     break;
             }
    
