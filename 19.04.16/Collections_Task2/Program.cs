@@ -10,6 +10,8 @@ namespace Collections_Task2
     {
         static void Main(string[] args)
         {
+            string myString =  Console.ReadLine();
+            Dictionary<string, int> Slova = new Dictionary<string, int>();
 
         }
     }
