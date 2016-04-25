@@ -10,15 +10,15 @@ namespace Task3_Number__1
     {
         static void Main(string[] args)
         {
-            int n = Convert.ToInt32(Console.ReadLine());
             List<int> Integers = new List<int>();
-
+            int n = Convert.ToInt32(Console.ReadLine());
             while (n != -1)
             {
+                n = Convert.ToInt32(Console.ReadLine());
                 Integers.Add(n);
             }
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < Integers.Count; i++)
             {
                 Console.Write(Integers[i] + " ");
             }
