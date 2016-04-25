@@ -15,7 +15,7 @@ namespace Collections_Task2
             int kolichestvo = myString.Length;
             Dictionary<string, int> Slova = new Dictionary<string, int>();
             Slova.Add(myString,kolichestvo);
-            Console.WriteLine(Slova[myString]);
+            Console.Write(Slova[myString]);
         }
     }
 }
