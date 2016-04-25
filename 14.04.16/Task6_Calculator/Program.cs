@@ -14,13 +14,20 @@ namespace Task6_Calculator
             int b = Convert.ToInt32(Console.ReadLine());
             string x = Console.ReadLine();
             //int[] Calculator = new int[a];
+
             switch (x == "+")
             {
-                case:
-                    int z = a + b;
-                    Console.WriteLine(z);
+                case 0:
+                    int plus = a + b;
+                    Console.WriteLine("case 0");
+                    break;  
+                case 1:
+                    int multiplication = a * b;
+                    Console.WriteLine("case 1");
                     break;
             }
+   
         }
+            
     }
 }
