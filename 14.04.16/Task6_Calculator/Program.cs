@@ -39,6 +39,10 @@ namespace Task6_Calculator
                     int division = a / b;
                     Console.WriteLine(division);
                     break;
+                default:
+                    Console.WriteLine("Wrong operator!");
+                    Console.WriteLine("\n");
+                    break;
             }
    
         }
