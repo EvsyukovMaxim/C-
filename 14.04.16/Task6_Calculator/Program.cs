@@ -10,6 +10,7 @@ namespace Task6_Calculator
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите поочередно число, затем один из операторов: +  -  * или /  затем второе число:");
             int a = Convert.ToInt32(Console.ReadLine());
             string x = Console.ReadLine();
             int b = Convert.ToInt32(Console.ReadLine());
@@ -40,7 +41,7 @@ namespace Task6_Calculator
                     Console.WriteLine(division);
                     break;
                 default:
-                    Console.WriteLine("Wrong operator!");
+                    Console.WriteLine("Неверный оператор!!");
                     Console.WriteLine("\n");
                     break;
             }
