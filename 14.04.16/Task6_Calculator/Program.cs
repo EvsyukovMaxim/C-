@@ -30,6 +30,12 @@ namespace Task6_Calculator
                     Console.WriteLine(minus);
                     break;
                 case "/":
+                    if (b == 0)
+                    {
+                        Console.WriteLine("Are you crazy to divide to ZERO ?!");
+                        Console.WriteLine("\n");
+                        break;
+                    }
                     int division = a / b;
                     Console.WriteLine(division);
                     break;
