@@ -15,16 +15,24 @@ namespace Task6_Calculator
             int b = Convert.ToInt32(Console.ReadLine());
             //int[] Calculator = new int[a];
 
-            switch (x == "+")
+            switch (x)
             {
-                default:
+                case "+":
                     int plus = a + b;
                     Console.WriteLine(plus);
-                    break;  
-                //default:
-                //    int multiplication = a * b;
-                //    Console.WriteLine(multiplication);
-                //    break;
+                    break;
+                case "*":
+                    int multiplication = a * b;
+                    Console.WriteLine(multiplication);
+                    break;
+                case "-":
+                    int minus = a - b;
+                    Console.WriteLine(minus);
+                    break;
+                case "/":
+                    int division = a / b;
+                    Console.WriteLine(division);
+                    break;
             }
    
         }
