@@ -4,3 +4,6 @@ D:\Repository_GitHub\CS\19.04.16\Methods1_Task1\bin\Debug\Methods1_Task1.pdb
 D:\Repository_GitHub\CS\19.04.16\Methods1_Task1\obj\Debug\Methods1_Task1.csprojResolveAssemblyReference.cache
 D:\Repository_GitHub\CS\19.04.16\Methods1_Task1\obj\Debug\Methods1_Task1.exe
 D:\Repository_GitHub\CS\19.04.16\Methods1_Task1\obj\Debug\Methods1_Task1.pdb
+D:\Repository_GitHub\CS\19.04.16\Task1_Methods1\bin\Debug\Methods1_Task1.exe.config
+D:\Repository_GitHub\CS\19.04.16\Task1_Methods1\obj\Debug\Methods1_Task1.exe
+D:\Repository_GitHub\CS\19.04.16\Task1_Methods1\obj\Debug\Methods1_Task1.pdb

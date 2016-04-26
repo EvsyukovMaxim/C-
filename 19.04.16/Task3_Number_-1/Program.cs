@@ -10,18 +10,27 @@ namespace Task3_Number__1
     {
         static void Main(string[] args)
         {
-            List<int> Integers = new List<int>();
+            List<int> integers = new List<int>();
+            List<int> integersDouble = new List<int>();
             int n = Convert.ToInt32(Console.ReadLine());
+
             while (n != -1)
             {
                 n = Convert.ToInt32(Console.ReadLine());
-                Integers.Add(n);
+                if (integers.Contains(n))
+                {
+
+                    integersDouble.Add(n);
+                }
+                integers.Add(n);
             }
 
-            for (int i = 0; i < Integers.Count; i++)
+            for (int i = 0; i < integersDouble.Count; i++)
             {
-                Console.Write(Integers[i] + " ");
+                Console.Write("Это будлирующиеся значенияЖ " + integersDouble[i] + " ");
+
             }
+
         }
     }
 }
