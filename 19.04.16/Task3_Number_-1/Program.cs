@@ -27,7 +27,7 @@ namespace Task3_Number__1
 
             for (int i = 0; i < integersDouble.Count; i++)
             {
-                Console.Write("Это будлирующиеся значенияЖ " + integersDouble[i] + " ");
+                Console.Write("Это дублирующиеся значения: " + integersDouble[i] + " ");
 
             }
 
