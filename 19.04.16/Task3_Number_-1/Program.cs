@@ -29,7 +29,6 @@ namespace Task3_Number__1
             {
                 Console.Write(integersDouble[i] + " ");
             }
-
         }
     }
 }

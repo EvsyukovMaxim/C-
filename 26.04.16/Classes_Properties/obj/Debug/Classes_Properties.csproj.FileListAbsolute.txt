@@ -1,0 +1,6 @@
+D:\Repository_GitHub\CS\26.04.16\Classes_Properties\bin\Debug\Classes_Properties.exe.config
+D:\Repository_GitHub\CS\26.04.16\Classes_Properties\bin\Debug\Classes_Properties.exe
+D:\Repository_GitHub\CS\26.04.16\Classes_Properties\bin\Debug\Classes_Properties.pdb
+D:\Repository_GitHub\CS\26.04.16\Classes_Properties\obj\Debug\Classes_Properties.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\26.04.16\Classes_Properties\obj\Debug\Classes_Properties.exe
+D:\Repository_GitHub\CS\26.04.16\Classes_Properties\obj\Debug\Classes_Properties.pdb
