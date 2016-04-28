@@ -8,22 +8,26 @@ namespace Classes_Properties
 {
     public class Telephone
     {
-        private string _cityCode;
-        private string _telephoneNumber;
+        readonly string _cityCode;
+        readonly string _telephoneNumber;
 
-        public Telephone(string cityCode, string telephoneNumber)
+        public Telephone()
         {
-            _cityCode = cityCode;
-            _telephoneNumber = telephoneNumber;
+            _cityCode = "999";
+            _telephoneNumber = "9999999";
         }
 
-        public string FullNumber (string cityCode, string telephoneNumber)
+        public string FullNumber
         {
-            if (cityCode == null)
+            get
             {
-                return telephoneNumber;
+                if (_cityCode == null)
+                {
+                    return _telephoneNumber;
+                }
+                return "(" + _cityCode + ")" + _telephoneNumber;
             }
-            return "(" + cityCode + ")" + telephoneNumber;
+            
         }
     }
 }

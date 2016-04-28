@@ -10,9 +10,10 @@ namespace Classes_Properties
     {
         static void Main(string[] args)
         {
-            Telephone myTelephone = new Telephone("999", "9999999");
+            Telephone myTelephone = new Telephone();
 
-            Console.WriteLine($"{ myTelephone.FullNumber(Console.ReadLine(), Console.ReadLine())}");
+            Console.ReadKey();
+            Console.WriteLine($"{ myTelephone.FullNumber}");
         }
     }
 }
