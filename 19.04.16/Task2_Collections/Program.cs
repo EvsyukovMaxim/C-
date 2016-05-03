@@ -11,11 +11,22 @@ namespace Collections_Task2
         static void Main(string[] args)
         {
             Console.WriteLine("Введите какое-нЕДь словечКО");
-            string myString =  Console.ReadLine();
-            int kolichestvo = myString.Length;
-            Dictionary<string, int> Slova = new Dictionary<string, int>();
-            Slova.Add(myString,kolichestvo);
-            Console.Write(Slova[myString]);
+            string slovo =  Console.ReadLine();
+            int kolichestvo = slovo.Length;
+            Dictionary<char, int> Symbols = new Dictionary<char, int>();
+
+            for (int i = 0; i < kolichestvo; i++)
+            {
+                if (Symbols.ContainsKey(slovo[i]))
+                {
+                    Symbols[slovo[i]]++;
+                }
+                else
+                {
+                    Symbols.Add(slovo[i], 1);
+                }
+                Console.WriteLine(Symbols[slovo[i]]);
+            }
         }
     }
 }

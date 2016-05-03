@@ -1,0 +1,6 @@
+D:\Repository_GitHub\CS\28.04.16\Firmy_Task1\bin\Debug\Firmy_Task1.exe.config
+D:\Repository_GitHub\CS\28.04.16\Firmy_Task1\obj\Debug\Firmy_Task1.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\28.04.16\Firmy_Task1\bin\Debug\Firmy_Task1.exe
+D:\Repository_GitHub\CS\28.04.16\Firmy_Task1\bin\Debug\Firmy_Task1.pdb
+D:\Repository_GitHub\CS\28.04.16\Firmy_Task1\obj\Debug\Firmy_Task1.exe
+D:\Repository_GitHub\CS\28.04.16\Firmy_Task1\obj\Debug\Firmy_Task1.pdb
