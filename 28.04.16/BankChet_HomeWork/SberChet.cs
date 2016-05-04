@@ -21,14 +21,14 @@ namespace BankChet_HomeWork
             }
         }
 
-        public int FillChet(int summa)
+        public int FillChet(int plus)
         {
-            return _currentSum + summa;
+            return _currentSum + plus;
         }
 
-        public int TakeMoneyFromChet (int summa)
+        public int TakeMoneyFromChet (int minus)
         {
-            return _currentSum - summa;
+            return _currentSum - minus;
         }
     }
 
