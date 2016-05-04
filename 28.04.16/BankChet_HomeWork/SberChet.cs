@@ -12,11 +12,12 @@ namespace BankChet_HomeWork
         {
             if (_currentSum < 0)
             {
-                return _isActive = false;
+                CloseChet();
+                return _isActive;
             }
             else
             {
-                return _isActive = true;
+                return _isActive;
             }
         }
 
