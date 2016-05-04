@@ -18,6 +18,9 @@ namespace BankChet_HomeWork
             Console.WriteLine(mySberAccount.FillChet(100));
             Console.WriteLine(mySberAccount.TakeMoneyFromChet(100100));
             Console.WriteLine("Счет действителен: " + mySberAccount.CloseAccount());
+
+            Console.WriteLine(mySberAccount.FillChet(100));
+            Console.WriteLine(mySberAccount.TakeMoneyFromChet(100100));
         }
     }
 }

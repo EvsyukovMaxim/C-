@@ -8,30 +8,31 @@ namespace BankChet_HomeWork
 {
     class SberAccount : GeneralAccount
     {
-
-        //public bool CloseSberAccount()
-        //{
-        //    if (_currentSum == 0)
-        //    {
-        //        CloseAccount();
-        //        return _isActive;
-        //    }
-        //    else
-        //    {
-        //        return _isActive;
-        //    }
-        //}
-
         public uint FillChet(uint plus)
         {
-            _currentSum = _currentSum + plus;
-            return _currentSum;
+            if (isActive == true)
+            {
+                currentSum = currentSum + plus;
+                return currentSum;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         public uint TakeMoneyFromChet (uint minus)
         {
-            _currentSum = _currentSum - minus;
-            return _currentSum;
+            if (isActive == true)
+            {
+                currentSum = currentSum - minus;
+                return currentSum;
+            }
+            else
+            {
+                return 0;
+            }
+
         }
     }
 
