@@ -8,6 +8,7 @@ namespace BankChet_HomeWork
 {
     class SberAccount : GeneralAccount
     {
+
         //public bool CloseSberAccount()
         //{
         //    if (_currentSum == 0)

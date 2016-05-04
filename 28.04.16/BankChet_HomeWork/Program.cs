@@ -14,10 +14,10 @@ namespace BankChet_HomeWork
             //myGeneralAccount.CloseChet();
             SberAccount mySberAccount = new SberAccount();
 
-            Console.WriteLine("Счет действителен: "+ mySberAccount.CloseSberAccount());
+            Console.WriteLine("Счет действителен: "+ mySberAccount.CloseAccount());
             Console.WriteLine(mySberAccount.FillChet(100));
             Console.WriteLine(mySberAccount.TakeMoneyFromChet(100100));
-            Console.WriteLine("Счет действителен: " + mySberAccount.CloseSberAccount());
+            Console.WriteLine("Счет действителен: " + mySberAccount.CloseAccount());
         }
     }
 }
