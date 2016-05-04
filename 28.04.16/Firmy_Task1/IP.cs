@@ -13,13 +13,13 @@ namespace Firmy_Task1
 
         public IP (string personFIO, DateTime birthDate, string Id, string mainTelephoneNumber, long orderSum) : base (Id, mainTelephoneNumber, orderSum)
         {
-            _personFIO = personFIO;
-            _birthDate = birthDate;
+            _personFIO = "Иванов И.И.";
+            _birthDate = new DateTime(1987, 9, 14);
         }
 
         public void ReturnPersonFIO()
         {
-            Console.WriteLine("ИП" + _personFIO);
+            Console.WriteLine("ИП " + _personFIO);
         }
     }
 }

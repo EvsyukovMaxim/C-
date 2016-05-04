@@ -14,9 +14,13 @@ namespace Firmy_Task1
 
         public Client (string Id, string mainTelephoneNumber, long orderSum)
         {
-            _Id = Id;
-            _mainTelephoneNumber = mainTelephoneNumber;
-            _orderSum = orderSum;
+            _Id = "123456789";
+            _mainTelephoneNumber = "(999) 123-45-67";
+            _orderSum = 480530;
+        }
+        public void ReturnOrderSum()
+        {
+            Console.WriteLine("Сумма заказа: " + _orderSum + " руб.");
         }
     }
 }

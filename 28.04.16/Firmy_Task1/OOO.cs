@@ -12,13 +12,12 @@ namespace Firmy_Task1
         private string _bankAccount;
         public OOO(string firmName, string bankAccount, string Id, string mainTelephoneNumber, long orderSum) : base(Id, mainTelephoneNumber, orderSum)
         {
-            _firmName = firmName;
-            _bankAccount = bankAccount;
+            _firmName = "Роги и Копыта";
+            _bankAccount = "1324 5678 9012 3456";
         }
         public void ReturnFirmName()
         {
-            Console.WriteLine("OOO" + _firmName);
-            Console.WriteLine("Bank Acc" + _bankAccount);
+            Console.WriteLine("Наименование организации: "+"OOO " + "''"+_firmName+"''");
         }
     }
 
