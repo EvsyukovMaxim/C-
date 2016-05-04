@@ -8,9 +8,9 @@ namespace BankChet_HomeWork
 {
     class GeneralAccount
     {
-        private long _accountNumber;
-        private string _ownerName;
-        internal uint _currentSum;
+        internal long _accountNumber;
+        internal string _ownerName;
+        internal int _currentSum;
         internal bool _isActive;
 
         public GeneralAccount ()
