@@ -12,12 +12,12 @@ namespace BankChet_HomeWork
         {
             //GeneralAccount myGeneralAccount = new GeneralAccount();
             //myGeneralAccount.CloseChet();
-            SberChet mySberChet = new SberChet();
+            SberAccount mySberAccount = new SberAccount();
 
-            Console.WriteLine("Счет действителен: "+ mySberChet.CloseSberAccount());
-            Console.WriteLine(mySberChet.FillChet(100));
-            Console.WriteLine(mySberChet.TakeMoneyFromChet(100001));
-            Console.WriteLine("Счет действителен: " + mySberChet.CloseSberAccount());
+            Console.WriteLine("Счет действителен: "+ mySberAccount.CloseSberAccount());
+            Console.WriteLine(mySberAccount.FillChet(100));
+            Console.WriteLine(mySberAccount.TakeMoneyFromChet(100100));
+            Console.WriteLine("Счет действителен: " + mySberAccount.CloseSberAccount());
         }
     }
 }
