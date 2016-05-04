@@ -10,7 +10,7 @@ namespace BankChet_HomeWork
     {
         internal long _accountNumber;
         internal string _ownerName;
-        internal int _currentSum;
+        public int _currentSum;
         internal bool _isActive;
 
         public GeneralAccount ()
@@ -21,7 +21,7 @@ namespace BankChet_HomeWork
             _isActive = true;
         }
 
-        public bool CloseChet()
+        public bool CloseAccount()
         {
             return _isActive = false;
         }

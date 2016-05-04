@@ -8,11 +8,11 @@ namespace BankChet_HomeWork
 {
     class SberChet : GeneralAccount
     {
-        public bool CloseSberChet()
+        public bool CloseSberAccount()
         {
             if (_currentSum < 0)
             {
-                CloseChet();
+                CloseAccount();
                 return _isActive;
             }
             else
