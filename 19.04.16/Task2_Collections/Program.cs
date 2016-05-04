@@ -13,19 +13,19 @@ namespace Collections_Task2
             Console.WriteLine("Введите какое-нЕДь словечКО");
             string slovo =  Console.ReadLine();
             int kolichestvo = slovo.Length;
-            Dictionary<char, int> Symbols = new Dictionary<char, int>();
+            Dictionary<char, int> symbols = new Dictionary<char, int>();
 
             for (int i = 0; i < kolichestvo; i++)
             {
-                if (Symbols.ContainsKey(slovo[i]))
+                if (symbols.ContainsKey(slovo[i]))
                 {
-                    Symbols[slovo[i]]++;
+                    symbols[slovo[i]]++;
                 }
                 else
                 {
-                    Symbols.Add(slovo[i], 1);
+                    symbols.Add(slovo[i], 1);
                 }
-                Console.WriteLine(Symbols[slovo[i]]);
+                Console.WriteLine(symbols[slovo[i]]);
             }
         }
     }
