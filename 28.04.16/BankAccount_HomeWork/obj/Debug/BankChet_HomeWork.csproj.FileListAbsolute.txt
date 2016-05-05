@@ -4,3 +4,6 @@ D:\Repository_GitHub\CS\28.04.16\BankChet_HomeWork\bin\Debug\BankChet_HomeWork.e
 D:\Repository_GitHub\CS\28.04.16\BankChet_HomeWork\bin\Debug\BankChet_HomeWork.pdb
 D:\Repository_GitHub\CS\28.04.16\BankChet_HomeWork\obj\Debug\BankChet_HomeWork.exe
 D:\Repository_GitHub\CS\28.04.16\BankChet_HomeWork\obj\Debug\BankChet_HomeWork.pdb
+D:\Repository_GitHub\CS\28.04.16\BankAccount_HomeWork\bin\Debug\BankChet_HomeWork.exe.config
+D:\Repository_GitHub\CS\28.04.16\BankAccount_HomeWork\obj\Debug\BankChet_HomeWork.exe
+D:\Repository_GitHub\CS\28.04.16\BankAccount_HomeWork\obj\Debug\BankChet_HomeWork.pdb

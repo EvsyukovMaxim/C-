@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankChet_HomeWork", "BankChet_HomeWork.csproj", "{D9C07DEC-5129-4B25-836F-4BE8F1898467}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount_HomeWork", "BankAccount_HomeWork.csproj", "{D9C07DEC-5129-4B25-836F-4BE8F1898467}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
