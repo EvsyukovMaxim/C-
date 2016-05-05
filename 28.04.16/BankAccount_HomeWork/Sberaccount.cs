@@ -8,7 +8,7 @@ namespace BankChet_HomeWork
 {
     class SberAccount : GeneralAccount
     {
-        public uint FillChet(uint plus)
+        public double FillChet(double plus)
         {
             if (_isActive == true)
             {
@@ -21,7 +21,7 @@ namespace BankChet_HomeWork
             }
         }
 
-        public uint TakeMoneyFromChet (uint minus)
+        public double TakeMoneyFromChet (double minus)
         {
             if (_isActive == true)
             {

@@ -10,7 +10,7 @@ namespace BankChet_HomeWork
     {
         readonly long _accountNumber;
         readonly string _ownerName;
-        protected uint _currentSum;
+        protected double _currentSum;
         protected bool _isActive;
 
         public GeneralAccount ()
