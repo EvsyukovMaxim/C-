@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BankChet_HomeWork
+namespace BankAccount_HomeWork
 {
     class SberAccount : GeneralAccount
     {
