@@ -8,29 +8,29 @@ namespace BankChet_HomeWork
 {
     class GeneralAccount
     {
-        internal long accountNumber;
-        internal string ownerName;
-        internal uint currentSum;
-        internal bool isActive;
+        readonly long _accountNumber;
+        readonly string _ownerName;
+        protected uint _currentSum;
+        protected bool _isActive;
 
         public GeneralAccount ()
         {
-            accountNumber = 1234567890123456;
-            ownerName = "Евсюков М.В.";
-            currentSum = 100000;
-            isActive = true;
+            _accountNumber = 1234567890123456;
+            _ownerName = "Евсюков М.В.";
+            _currentSum = 100000;
+            _isActive = true;
         }
 
         public bool CloseAccount()
         {
-            if (currentSum == 0)
+            if (_currentSum == 0)
             {
-                isActive = false;
-                return isActive;
+                _isActive = false;
+                return _isActive;
             }
             else
             {
-                return isActive;
+                return _isActive;
             }
         }
     }

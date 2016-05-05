@@ -10,10 +10,10 @@ namespace BankChet_HomeWork
     {
         public uint FillChet(uint plus)
         {
-            if (isActive == true)
+            if (_isActive == true)
             {
-                currentSum = currentSum + plus;
-                return currentSum;
+                _currentSum = _currentSum + plus;
+                return _currentSum;
             }
             else
             {
@@ -23,10 +23,10 @@ namespace BankChet_HomeWork
 
         public uint TakeMoneyFromChet (uint minus)
         {
-            if (isActive == true)
+            if (_isActive == true)
             {
-                currentSum = currentSum - minus;
-                return currentSum;
+                _currentSum = _currentSum - minus;
+                return _currentSum;
             }
             else
             {
