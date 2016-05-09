@@ -9,6 +9,7 @@ namespace BankChet_HomeWork
     //Накопительный счет
     class AccumulativeAccount : SberAccount
     {
+        //protected int _capitalizationPercent;
         public override double WithdrawMoneyFromAccount(double minus)
         {
             if (minus >= firstDeposit)
@@ -16,6 +17,31 @@ namespace BankChet_HomeWork
                 return base.WithdrawMoneyFromAccount(minus);
             }
             return 0;//Это вместо эксепшна, условие для отказа от каких либо действий, в случае, если снимаешь денег больше, чем первоначальный взнос
+        }
+
+        public double Capitalization(double capitalizationPercent)
+        {
+            if (_isActive == true)
+            {
+                if (firstDepositDate == DateTime.Now.Month)
+                {
+                    return _currentSum;
+                }
+                else if (firstDepositDate == firstDepositDate ++)
+                {
+                    firstDepositDate = firstDepositDate ++;
+                    _currentSum = _currentSum * (capitalizationPercent + 1);
+                    return _currentSum;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            else
+            {
+                return 0; //Это вместо эксепшна, условие для отказа от каких либо действий, в случае, если счет закрыт
+            }
         }
     }
 }

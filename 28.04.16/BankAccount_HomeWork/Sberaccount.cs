@@ -10,6 +10,7 @@ namespace BankChet_HomeWork
     class SberAccount : GeneralAccount
     {
         protected double firstDeposit = double.NaN; //Первоначальный взнос для Накопительного счета
+        protected double firstDepositDate = double.NaN;
         public double DepositAccount(double plus)
         {
             if (_isActive == true)
@@ -17,6 +18,10 @@ namespace BankChet_HomeWork
                 if (double.IsNaN(firstDeposit))
                 {
                     firstDeposit = plus;
+                }
+                if (double.IsNaN(firstDepositDate))
+                {
+                    firstDepositDate = DateTime.Now.Month;
                 }
                 _currentSum = _currentSum + plus;
                 return _currentSum;

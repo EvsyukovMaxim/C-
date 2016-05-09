@@ -35,9 +35,10 @@ namespace BankChet_HomeWork
             }
         }
 
-        public static void PrintNames()
+        public string PrintNames()
         {
             Console.WriteLine("ФИО и номер счета: " + _ownerName + " " + _accountNumber);
+            return "";
         }
 
         public double ReturnCurrentSum()
