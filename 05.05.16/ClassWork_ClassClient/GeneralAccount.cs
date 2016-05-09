@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BankChet_HomeWork
+namespace ClassWork_ClassClient
 {
     //Родительский класс
     class GeneralAccount
@@ -34,13 +34,6 @@ namespace BankChet_HomeWork
                 return _isActive;
             }
         }
-
-        public string PrintNames()
-        {
-            Console.WriteLine("ФИО и номер счета: " + _ownerName + " " + _accountNumber);
-            return "";
-        }
-
         public int ReturnCurrentSum()
         {
             return _currentSum;
