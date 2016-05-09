@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccumulativeAccount.cs" />
-    <Compile Include="Client.cs" />
     <Compile Include="GeneralAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

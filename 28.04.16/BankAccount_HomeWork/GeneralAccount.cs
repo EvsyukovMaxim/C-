@@ -11,7 +11,7 @@ namespace BankChet_HomeWork
     {
         readonly string _accountNumber;
         readonly string _ownerName;
-        protected int _currentSum;
+        protected double _currentSum;
         protected bool _isActive;
 
         public GeneralAccount ()
@@ -41,7 +41,7 @@ namespace BankChet_HomeWork
             return "";
         }
 
-        public int ReturnCurrentSum()
+        public double ReturnCurrentSum()
         {
             return _currentSum;
         }
