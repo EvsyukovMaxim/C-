@@ -10,6 +10,7 @@ namespace BankChet_HomeWork
             GeneralAccount myGeneralAccount = new GeneralAccount();
             SberAccount mySberAccount = new SberAccount();
             AccumulativeAccount myAccumulativeAccount = new AccumulativeAccount();
+            CheckingAccount myCheckingAccount = new CheckingAccount();
 
             //Вызовы
             Console.WriteLine(myGeneralAccount.PrintNames()); //Печатаем поля родительского класса
@@ -25,7 +26,12 @@ namespace BankChet_HomeWork
             Console.WriteLine("Внесение на Накопительный счет: " + myAccumulativeAccount.DepositAccount(1000));
             Console.WriteLine("Снятие со счета больше чем первоначальный взнос: " + myAccumulativeAccount.WithdrawMoneyFromAccount(1000));
             Console.WriteLine("Внесение на Накопительный счет: " + myAccumulativeAccount.DepositAccount(100));
-            Console.WriteLine("Баланс Накопительного счета после капитализации: " + myAccumulativeAccount.Capitalization(0.01));
+            Console.WriteLine("Остаток Накопительного счета после капитализации: " + myAccumulativeAccount.Capitalization(0.01));
+
+
+            Console.WriteLine("Внесение на Расчетный счет: " + myCheckingAccount.DepositAccount(1000));
+            Console.WriteLine("Снятие с Расчетного счета: " + myCheckingAccount.WithdrawMoneyFromAccount(100));
+            Console.WriteLine("Заряжаем процент за обслуживание и тогда остаток на Расчетном счете: " + myCheckingAccount.Fee(0.01));
         }
 
     }

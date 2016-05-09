@@ -9,7 +9,6 @@ namespace BankChet_HomeWork
     //Накопительный счет
     class AccumulativeAccount : SberAccount
     {
-        //protected int _capitalizationPercent;
         public override double WithdrawMoneyFromAccount(double minus)
         {
             if (minus >= firstDeposit)
