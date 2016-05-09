@@ -12,12 +12,13 @@ namespace BankChet_HomeWork
         static void Main(string[] args)
         {
             //Экземпляры классов
-            GeneralAccount myGeneralAccount = new GeneralAccount();
+            //GeneralAccount myGeneralAccount = new GeneralAccount();
             SberAccount mySberAccount = new SberAccount();
             AccumulativeAccount myAccumulativeAccount = new AccumulativeAccount();
 
             //Вызовы
-            Console.WriteLine(myGeneralAccount.PrintNames()); //Печатаем некоторые поля родительского класса
+            //Console.WriteLine(myGeneralAccount.PrintNames()); //Печатаем некоторые поля родительского класса
+            GeneralAccount.PrintNames();
 
             Console.WriteLine("Сберегательный счет действителен: " + mySberAccount.CloseAccount());
             Console.WriteLine("Остаток после внесения на Сберегательный счет: " + mySberAccount.DepositAccount(-100));
