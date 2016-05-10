@@ -11,6 +11,7 @@ namespace BankChet_HomeWork
             SberAccount mySberAccount = new SberAccount();
             AccumulativeAccount myAccumulativeAccount = new AccumulativeAccount();
             CheckingAccount myCheckingAccount = new CheckingAccount();
+            MetalicAccount myMetalicAccount = new MetalicAccount();
 
             //Вызовы
             Console.WriteLine(myGeneralAccount.PrintNames()); //Печатаем поля родительского класса
@@ -32,6 +33,11 @@ namespace BankChet_HomeWork
             Console.WriteLine("Внесение на Расчетный счет: " + myCheckingAccount.DepositAccount(1000));
             Console.WriteLine("Снятие с Расчетного счета: " + myCheckingAccount.WithdrawMoneyFromAccount(100));
             Console.WriteLine("Заряжаем процент за обслуживание и тогда остаток на Расчетном счете: " + myCheckingAccount.Fee(0.01));
+
+
+            Console.WriteLine("Количество метала на Металлическом счету: " + myMetalicAccount.ReturnMetalValue() + " грамм");
+            Console.WriteLine("После внесения 1000 рублей, Мтеллический счет составляет: " + myMetalicAccount.DepositMetalAccount(1000) + "грамм");
+            Console.WriteLine("После изъятия 1000 рублей, Мтеллический счет составляет: " + myMetalicAccount.WithdrawFromMetalAccount(1000) + "грамм");
         }
 
     }

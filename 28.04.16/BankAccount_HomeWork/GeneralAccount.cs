@@ -40,10 +40,5 @@ namespace BankChet_HomeWork
             Console.WriteLine("ФИО и номер счета: " + _ownerName + " " + _accountNumber);
             return "";
         }
-
-        public double ReturnCurrentSum()
-        {
-            return _currentSum;
-        }
     }
 }

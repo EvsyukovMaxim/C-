@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BankChet_HomeWork
 {
@@ -11,7 +7,7 @@ namespace BankChet_HomeWork
     {
         protected double firstDeposit = double.NaN; //Первоначальный взнос для Накопительного счета
         protected double firstDepositDate = double.NaN;
-        public double DepositAccount(double plus)
+        public virtual double DepositAccount(double plus)
         {
             if (_isActive == true)
             {
