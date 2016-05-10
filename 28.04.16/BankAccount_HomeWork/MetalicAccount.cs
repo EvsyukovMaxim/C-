@@ -19,7 +19,7 @@ namespace BankChet_HomeWork
             _gramPrice = 1246.53;
         }
 
-        public double ReturnMetalValue() //Возвращает эквивалент в металле (переводит рубли в граммы)
+        public double ReturnGramAmount() //Возвращает эквивалент в металле (переводит рубли в граммы)
         {
             if (_isActive == true)
             {
@@ -37,7 +37,7 @@ namespace BankChet_HomeWork
             if (_isActive == true)
             {
                 _currentSum = _currentSum + plus;
-                return ReturnMetalValue();
+                return ReturnGramAmount();
             }
             else
             {
@@ -50,7 +50,7 @@ namespace BankChet_HomeWork
             if (_isActive == true)
             {
                 _currentSum = _currentSum - minus;
-                return ReturnMetalValue();
+                return ReturnGramAmount();
             }
             else
             {

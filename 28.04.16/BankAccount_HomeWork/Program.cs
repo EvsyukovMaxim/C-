@@ -35,7 +35,7 @@ namespace BankChet_HomeWork
             Console.WriteLine("Заряжаем процент за обслуживание и тогда остаток на Расчетном счете: " + myCheckingAccount.Fee(0.01));
 
 
-            Console.WriteLine("Количество метала на Металлическом счету: " + myMetalicAccount.ReturnMetalValue() + " грамм");
+            Console.WriteLine("Количество метала на Металлическом счету: " + myMetalicAccount.ReturnGramAmount() + " грамм");
             Console.WriteLine("После внесения 1000 рублей, Мтеллический счет составляет: " + myMetalicAccount.DepositMetalAccount(1000) + "грамм");
             Console.WriteLine("После изъятия 1000 рублей, Мтеллический счет составляет: " + myMetalicAccount.WithdrawFromMetalAccount(1000) + "грамм");
         }
