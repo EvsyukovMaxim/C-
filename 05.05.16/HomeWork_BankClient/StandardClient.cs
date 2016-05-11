@@ -8,10 +8,19 @@ namespace HomeWork_BankClient
 {
     class StandardClient
     {
-        List<BaseAccount> accountsList = new List<BaseAccount>(3);
+        List<BaseAccount> accountsList = new List<BaseAccount>();
+
         public void AddAccount (BaseAccount account)
         {
-            accountsList.Add(account);
+            int listCount = accountsList.Count;
+            if (listCount <= 3)
+            {
+                accountsList.Add(account);
+            }
+            else
+            {
+                Console.WriteLine("Можно только 3 счета");
+            }
         }
 
         public void PrintAccountNumber()
@@ -21,6 +30,12 @@ namespace HomeWork_BankClient
                 Console.WriteLine($"Сумма на счету Обычного клиента: {accountsList[i].ReturnCurrentSum}, {accountsList[i].ReturnAllDaInfO}");
             }
         }
+
+        public void PrintAccountIndex()
+        {
+            Console.WriteLine(accountsList.ElementAt(3).ReturnCurrentSum);
+        }
+        
 
     }
 }
