@@ -10,7 +10,15 @@ namespace HomeWork_BankClient
     {
         static void Main(string[] args)
         {
+            StandardClient myStandardClient = new StandardClient();
+            BaseAccount myBaseAccount1 = new BaseAccount();
+            SavingAccount mySavingAccount2 = new SavingAccount();
+            AccumulativeAccount myAccumulativeAccount3 = new AccumulativeAccount();
+            myStandardClient.AddAccount(myBaseAccount1);
+            myStandardClient.AddAccount(mySavingAccount2);
+            myStandardClient.AddAccount(myAccumulativeAccount3);
 
+            myStandardClient.PrintAccountNumber();
         }
     }
 }

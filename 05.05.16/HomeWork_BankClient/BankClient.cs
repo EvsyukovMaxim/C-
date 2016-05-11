@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace HomeWork_BankClient
 {
     class BankClient
-    {
+    {/*
         SavingAccount mySavingAccount = new SavingAccount();
         AccumulativeAccount myAccumulativeAccount = new AccumulativeAccount();
         public int GetSum
@@ -24,6 +24,6 @@ namespace HomeWork_BankClient
                 }
                 return Sum;
             }
-        }
+        }*/
     }
 }
