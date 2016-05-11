@@ -8,5 +8,9 @@ namespace HomeWork_BankClient
 {
     class MetallAccount : BaseAccount
     {
+        public MetallAccount(string accountNumber) : base (accountNumber)
+        {
+            _accountNumber = accountNumber;
+        }
     }
 }

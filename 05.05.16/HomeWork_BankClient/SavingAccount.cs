@@ -9,6 +9,10 @@ namespace HomeWork_BankClient
     //Сберегательный счет
     class SavingAccount : BaseAccount
     {
+        public SavingAccount (string accountNumber) : base (accountNumber)
+        {
+            _accountNumber = accountNumber;
+        }
     }
 
 }

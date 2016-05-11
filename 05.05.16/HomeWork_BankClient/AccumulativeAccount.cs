@@ -8,5 +8,9 @@ namespace HomeWork_BankClient
 {
     class AccumulativeAccount : BaseAccount
     {
+        public AccumulativeAccount(string accountNumber) : base (accountNumber)
+        {
+            _accountNumber = accountNumber;
+        }
     }
 }
