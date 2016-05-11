@@ -31,12 +31,21 @@ namespace HomeWork_BankClient
             }
         }
 
-        public CloseAccount(string accountNumber)
+        public string CloseClientAccount(string accountNumber)
         {
-            if (accountsList.ret)
+            for (int i = 0; i < accountsList.Count; i++)
             {
-
+                if (accountsList[i].ReturnAccountNumber == accountNumber)
+                {
+                    accountsList.RemoveAt(i);
+                }
             }
+            return "Счет с номером: " + accountNumber + "- закрыт";
+        }
+
+        public void PrintIndex()
+        {
+            Console.Write(accountsList[2]);
         }
     }
 }

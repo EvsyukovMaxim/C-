@@ -10,7 +10,7 @@ namespace HomeWork_BankClient
     {
         List<BaseAccount> accountsList = new List<BaseAccount>();
 
-        public void AddAccount(BaseAccount account)
+        public void AddAccountVIP(BaseAccount account)
         {
             int listCount = accountsList.Count;
             if (listCount < 10)
