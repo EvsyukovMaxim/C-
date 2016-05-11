@@ -8,17 +8,26 @@ namespace HomeWork_BankClient
 {
     class VipClient
     {
-        List<BaseAccount> accountsList = new List<BaseAccount>(10);
+        List<BaseAccount> accountsList = new List<BaseAccount>();
+
         public void AddAccount(BaseAccount account)
         {
-            accountsList.Add(account);
+            int listCount = accountsList.Count;
+            if (listCount < 10)
+            {
+                accountsList.Add(account);
+            }
+            else
+            {
+                Console.WriteLine("Можно только 10 счетов");
+            }
         }
 
         public void PrintAccountNumber()
         {
             for (int i = 0; i < accountsList.Count; i++)
             {
-                Console.WriteLine($"Сумма на счету Обычного клиента: {accountsList[i].ReturnCurrentSum}, {accountsList[i].ReturnAllDaInfO}");
+                Console.WriteLine($"Сумма VIP-клиента: {accountsList[i].ReturnCurrentSum}, {accountsList[i].ReturnAllDaInfO}");
             }
         }
     }

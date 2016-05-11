@@ -13,7 +13,7 @@ namespace HomeWork_BankClient
         public void AddAccount (BaseAccount account)
         {
             int listCount = accountsList.Count;
-            if (listCount <= 3)
+            if (listCount < 3)
             {
                 accountsList.Add(account);
             }
@@ -27,15 +27,8 @@ namespace HomeWork_BankClient
         {
             for (int i = 0; i < accountsList.Count; i++)
             {
-                Console.WriteLine($"Сумма на счету Обычного клиента: {accountsList[i].ReturnCurrentSum}, {accountsList[i].ReturnAllDaInfO}");
+                Console.WriteLine($"Сумма Обычного клиента: {accountsList[i].ReturnCurrentSum}, {accountsList[i].ReturnAllDaInfO}");
             }
         }
-
-        public void PrintAccountIndex()
-        {
-            Console.WriteLine(accountsList.ElementAt(3).ReturnCurrentSum);
-        }
-        
-
     }
 }
