@@ -27,7 +27,19 @@ namespace HomeWork_BankClient
         {
             for (int i = 0; i < accountsList.Count; i++)
             {
-                Console.WriteLine($"Сумма VIP-клиента: {accountsList[i].ReturnCurrentSum},{accountsList[i].ReturnAccountNumber},{accountsList[i].ReturnFIO}");
+                Console.WriteLine($"Сумма VIP-клиента: {accountsList[i].ReturnCurrentSum},{accountsList[i].AccountNumber},{accountsList[i].ReturnFIO}");
+            }
+        }
+
+        public void CloseClientAccount(string accountNumber)
+        {
+            for (int i = 0; i < accountsList.Count; i++)
+            {
+                if (accountsList[i].AccountNumber == accountNumber)
+                {
+                    accountsList.RemoveAt(i);
+                    Console.WriteLine("Счет с номером: " + accountNumber + " - закрыт");
+                }
             }
         }
     }

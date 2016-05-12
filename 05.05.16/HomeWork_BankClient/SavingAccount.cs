@@ -11,7 +11,7 @@ namespace HomeWork_BankClient
     {
         public SavingAccount (string accountNumber) : base (accountNumber)
         {
-            _accountNumber = accountNumber;
+            AccountNumber = accountNumber;
         }
     }
 

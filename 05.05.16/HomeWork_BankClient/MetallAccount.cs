@@ -10,7 +10,7 @@ namespace HomeWork_BankClient
     {
         public MetallAccount(string accountNumber) : base (accountNumber)
         {
-            _accountNumber = accountNumber;
+            AccountNumber = accountNumber;
         }
     }
 }

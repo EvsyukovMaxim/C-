@@ -53,6 +53,8 @@ namespace HomeWork_BankClient
 
             myVipClient.PrintAccountNumber();
 
+            myVipClient.CloseClientAccount("3333 3333 3333 3333");
+
             myBank.Transaction(mySavingAccount2, myAccumulativeAccount3, 10000);
             myStandardClient.PrintAccountNumber();
             myVipClient.PrintAccountNumber();

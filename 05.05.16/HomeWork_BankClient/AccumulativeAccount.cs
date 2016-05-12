@@ -10,7 +10,7 @@ namespace HomeWork_BankClient
     {
         public AccumulativeAccount(string accountNumber) : base (accountNumber)
         {
-            _accountNumber = accountNumber;
+             AccountNumber = accountNumber;
         }
     }
 }

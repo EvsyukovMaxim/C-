@@ -27,25 +27,20 @@ namespace HomeWork_BankClient
         {
             for (int i = 0; i < accountsList.Count; i++)
             {
-                Console.WriteLine($"Сумма Обычного клиента: {accountsList[i].ReturnCurrentSum},{accountsList[i].ReturnAccountNumber},{accountsList[i].ReturnFIO}");
+                Console.WriteLine($"Сумма Обычного клиента: {accountsList[i].ReturnCurrentSum}, Номер счета: {accountsList[i].AccountNumber}, ФИО: {accountsList[i].ReturnFIO}");
             }
         }
 
-        public string CloseClientAccount(string accountNumber)
+        public void CloseClientAccount(string accountNumber)
         {
             for (int i = 0; i < accountsList.Count; i++)
             {
-                if (accountsList[i].ReturnAccountNumber == accountNumber)
+                if (accountsList[i].AccountNumber == accountNumber)
                 {
                     accountsList.RemoveAt(i);
+                    Console.WriteLine("Счет с номером: " + accountNumber + " - закрыт");
                 }
             }
-            return "Счет с номером: " + accountNumber + "- закрыт";
-        }
-
-        public void PrintIndex()
-        {
-            Console.Write(accountsList[2]);
         }
     }
 }

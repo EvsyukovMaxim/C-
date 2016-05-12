@@ -8,14 +8,14 @@ namespace HomeWork_BankClient
 {
     public class BaseAccount
     {
-        protected string _accountNumber;
+        //protected string _accountNumber;
         readonly string _ownerName;
         protected int _currentSum;
         protected bool _isActive;
 
         public BaseAccount(string accountNumber)
         {
-            _accountNumber = accountNumber;
+            AccountNumber = accountNumber;
             _ownerName = "Евсюков М.В.";
             _currentSum = 100000;
             _isActive = true;
@@ -34,8 +34,9 @@ namespace HomeWork_BankClient
             }
         }
         public int ReturnCurrentSum { get { return _currentSum; } }
-        public string ReturnAccountNumber { get { return "Номер счета:" + _accountNumber; } }
-        public string ReturnFIO { get { return "ФИО: " + _ownerName; } }
+
+        public string AccountNumber { get; protected set; }
+        public string ReturnFIO { get { return _ownerName; } }
 
         public int DepositAccount(double plus)
         {
