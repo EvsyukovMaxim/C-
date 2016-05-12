@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Lesson7_ClassWork")]
+[assembly: AssemblyTitle("BankChet_HomeWork")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("2ГИС")]
-[assembly: AssemblyProduct("Lesson7_ClassWork")]
+[assembly: AssemblyProduct("BankChet_HomeWork")]
 [assembly: AssemblyCopyright("Copyright © 2ГИС 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("11396663-14e4-4fc1-b913-80d71c726d32")]
+[assembly: Guid("d9c07dec-5129-4b25-836f-4be8f1898467")]
 
 // Version information for an assembly consists of the following four values:
 //

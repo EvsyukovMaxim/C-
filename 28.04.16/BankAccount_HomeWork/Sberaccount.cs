@@ -5,8 +5,6 @@ namespace BankChet_HomeWork
     //Сберегательный счет
     class SberAccount : GeneralAccount
     {
-        protected double firstDepositDate = double.NaN;
-
         public SberAccount (double currentSum, string ownerName) : base (currentSum, ownerName)
         {
 
@@ -15,10 +13,6 @@ namespace BankChet_HomeWork
         {
             if (_isActive == true)
             {
-                if (double.IsNaN(firstDepositDate))
-                {
-                    firstDepositDate = DateTime.Now.Month;
-                }
                 _currentSum = _currentSum + plus;
                 Console.WriteLine(_currentSum);
             }

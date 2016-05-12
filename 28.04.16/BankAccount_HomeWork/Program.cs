@@ -26,16 +26,17 @@ namespace BankChet_HomeWork
 
             Console.Write("Остаток после внесения на Накопительный счет: ");
             myAccumulativeAccount.DepositAccount(1000);
+            myAccumulativeAccount.Capitalization(10);
             Console.Write("Остаток после снятия с Накопительного счета: ");
-            myAccumulativeAccount.WithdrawMoneyFromAccount(91000);
+            myAccumulativeAccount.WithdrawMoneyFromAccount(91841.67);
             myAccumulativeAccount.WithdrawMoneyFromAccount(1);
-            //Console.WriteLine("Внесение на Накопительный счет: " + myAccumulativeAccount.DepositAccount(100));
-            //Console.WriteLine("Остаток Накопительного счета после капитализации: " + myAccumulativeAccount.Capitalization(0.01));
 
 
-            //Console.WriteLine("Внесение на Расчетный счет: " + myCheckingAccount.DepositAccount(1000));
-            //Console.WriteLine("Снятие с Расчетного счета: " + myCheckingAccount.WithdrawMoneyFromAccount(100));
-            //Console.WriteLine("Заряжаем процент за обслуживание и тогда остаток на Расчетном счете: " + myCheckingAccount.Fee(0.01));
+            Console.Write("Остаток после внесения на Расчетный счет: ");
+            myCheckingAccount.DepositAccount(1000);
+            Console.Write("Остаток после снятия с Расчетного счета: ");
+            myCheckingAccount.WithdrawMoneyFromAccount(100);
+            myCheckingAccount.Fee(10);
 
 
             //Console.WriteLine("Количество метала на Металлическом счету: " + myMetalicAccount.ReturnGramAmount() + " грамм");

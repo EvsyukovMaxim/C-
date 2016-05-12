@@ -6,36 +6,18 @@ using System.Threading.Tasks;
 
 namespace BankChet_HomeWork
 {
-    //Рассчетный счет
+    //Расчетный  счет
     class CheckingAccount : SberAccount
     {
         public CheckingAccount (double currentSum, string ownerName) : base(currentSum, ownerName)
         {
 
         }
-        public double Fee(double FeeValue)
+        public void Fee(double feeValue)
         {
-            if (_isActive == true)
-            {
-                if (firstDepositDate == DateTime.Now.Month)
-                {
-                    return _currentSum;
-                }
-                else if (firstDepositDate == firstDepositDate++)
-                {
-                    firstDepositDate = firstDepositDate++;
-                    _currentSum = _currentSum - (_currentSum * FeeValue);
-                    return _currentSum;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-            else
-            {
-                return 0; //Это вместо эксепшна, условие для отказа от каких либо действий, в случае, если счет закрыт
-            }
+            double a = ((_currentSum * (feeValue / 100)) / 12);
+            Console.WriteLine("Сумма платы за обслуживание: " + Math.Round(a, 2));
+            Console.Write("Общий остаток Расчетного счета после обслуживания: "); WithdrawMoneyFromAccount(Math.Round(a, 2));
         }
     }
 }

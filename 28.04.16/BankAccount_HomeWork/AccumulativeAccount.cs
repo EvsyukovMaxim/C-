@@ -29,22 +29,11 @@ namespace BankChet_HomeWork
             
         }
 
-        public double Capitalization(double capitalizationPercent)
+        public void Capitalization(double capitalizationPercent)
         {
-            if (firstDepositDate == DateTime.Now.Month)
-            {
-                return _currentSum;
-            }
-            else if (firstDepositDate == firstDepositDate ++)
-            {
-                firstDepositDate = firstDepositDate ++;
-                _currentSum = _currentSum * (capitalizationPercent + 1);
-                return _currentSum;
-            }
-            else
-            {
-                return 0;
-            }
+            double a = ((_currentSum * (capitalizationPercent / 100)) / 12);
+            Console.WriteLine("Сумма капитализации Накопительного счета: " + Math.Round(a,2));
+            Console.Write("Общий остаток Накопительного счета после капитализации: "); DepositAccount(Math.Round(a,2));
         }
     }
 }
