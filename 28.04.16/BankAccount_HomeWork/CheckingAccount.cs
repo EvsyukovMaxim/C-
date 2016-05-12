@@ -9,6 +9,10 @@ namespace BankChet_HomeWork
     //Рассчетный счет
     class CheckingAccount : SberAccount
     {
+        public CheckingAccount (double currentSum, string ownerName) : base(currentSum, ownerName)
+        {
+
+        }
         public double Fee(double FeeValue)
         {
             if (_isActive == true)

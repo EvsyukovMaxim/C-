@@ -5,39 +5,47 @@ namespace BankChet_HomeWork
     //Сберегательный счет
     class SberAccount : GeneralAccount
     {
-        protected double firstDeposit = double.NaN; //Первоначальный взнос для Накопительного счета
         protected double firstDepositDate = double.NaN;
-        public virtual double DepositAccount(double plus)
+
+        public SberAccount (double currentSum, string ownerName) : base (currentSum, ownerName)
+        {
+
+        }
+        public virtual void DepositAccount(double plus)
         {
             if (_isActive == true)
             {
-                if (double.IsNaN(firstDeposit))
-                {
-                    firstDeposit = plus;
-                }
                 if (double.IsNaN(firstDepositDate))
                 {
                     firstDepositDate = DateTime.Now.Month;
                 }
                 _currentSum = _currentSum + plus;
-                return _currentSum;
+                Console.WriteLine(_currentSum);
             }
             else
             {
-                return 0; //Это вместо эксепшна, условие для отказа от каких либо действий, в случае, если счет закрыт
+                Console.WriteLine("Счет закрыт, вносить деньги нельзя");
             }
         }
 
-        public virtual double WithdrawMoneyFromAccount(double minus)
+        public virtual void WithdrawMoneyFromAccount(double minus)
         {
             if (_isActive == true)
             {
-                _currentSum = _currentSum - minus;
-                return _currentSum;
+                if (minus <= _currentSum)
+                {
+                    _currentSum = _currentSum - minus;
+                    Console.WriteLine(_currentSum);
+                }
+                else
+                {
+                    Console.WriteLine("Остаток на счете меньше снимаемой суммы");
+                }
+
             }
             else
             {
-                return 0; //Это вместо эксепшна, условие для отказа от каких либо действий, в случае, если счет закрыт
+                Console.WriteLine("Счет закрыт, снимать деньги нельзя");
             }
 
         }

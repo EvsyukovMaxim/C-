@@ -14,11 +14,11 @@ namespace BankChet_HomeWork
         protected double _currentSum;
         protected bool _isActive;
 
-        public GeneralAccount ()
+        public GeneralAccount (double currentSum, string ownerName)
         {
             _accountNumber = "1234567890123456";
-            _ownerName = "Евсюков М.В.";
-            _currentSum = 100000;
+            _ownerName = ownerName;
+            _currentSum = currentSum;
             _isActive = true;
         }
 
@@ -33,11 +33,6 @@ namespace BankChet_HomeWork
             {
                 return _isActive;
             }
-        }
-
-        public string PrintNames()
-        {
-            return "ФИО и номер счета: " + _ownerName + " " + _accountNumber;
         }
     }
 }

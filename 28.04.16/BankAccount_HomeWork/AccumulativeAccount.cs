@@ -9,37 +9,41 @@ namespace BankChet_HomeWork
     //Накопительный счет
     class AccumulativeAccount : SberAccount
     {
-        public override double WithdrawMoneyFromAccount(double minus)
+        protected uint _firstDeposit; //Первоначальный взнос для Накопительного счета
+        public AccumulativeAccount (double currentSum, string ownerName, uint firstDeposit) : base(currentSum, ownerName)
         {
-            if (minus >= firstDeposit)
+            _firstDeposit = firstDeposit;
+        }
+        public override void WithdrawMoneyFromAccount(double minus)
+        {
+            double a = 0;
+            a = _currentSum - minus;
+            if (a >= _firstDeposit)
             {
-                return base.WithdrawMoneyFromAccount(minus);
+                base.WithdrawMoneyFromAccount(minus);
             }
-            return 0;//Это вместо эксепшна, условие для отказа от каких либо действий, в случае, если снимаешь денег больше, чем первоначальный взнос
+            else
+            {
+                Console.WriteLine("Ошибка!!! Остаток на счете должен быть не меньше первоначального взноса");
+            }
+            
         }
 
         public double Capitalization(double capitalizationPercent)
         {
-            if (_isActive == true)
+            if (firstDepositDate == DateTime.Now.Month)
             {
-                if (firstDepositDate == DateTime.Now.Month)
-                {
-                    return _currentSum;
-                }
-                else if (firstDepositDate == firstDepositDate ++)
-                {
-                    firstDepositDate = firstDepositDate ++;
-                    _currentSum = _currentSum * (capitalizationPercent + 1);
-                    return _currentSum;
-                }
-                else
-                {
-                    return 0;
-                }
+                return _currentSum;
+            }
+            else if (firstDepositDate == firstDepositDate ++)
+            {
+                firstDepositDate = firstDepositDate ++;
+                _currentSum = _currentSum * (capitalizationPercent + 1);
+                return _currentSum;
             }
             else
             {
-                return 0; //Это вместо эксепшна, условие для отказа от каких либо действий, в случае, если счет закрыт
+                return 0;
             }
         }
     }
