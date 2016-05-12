@@ -33,8 +33,20 @@ namespace HomeWork_BankClient
                 return _isActive;
             }
         }
-        public int ReturnCurrentSum { get {return _currentSum; } }
+        public int ReturnCurrentSum { get { return _currentSum; } }
         public string ReturnAccountNumber { get { return "Номер счета:" + _accountNumber; } }
         public string ReturnFIO { get { return "ФИО: " + _ownerName; } }
+
+        public int DepositAccount(double plus)
+        {
+            _currentSum = _currentSum + Convert.ToInt32(plus);
+            return _currentSum;
+        }
+
+        public int WithdrawMoneyFromAccount(double minus)
+        {
+            _currentSum = _currentSum - Convert.ToInt32(minus);
+            return _currentSum;
+        }
     }
 }

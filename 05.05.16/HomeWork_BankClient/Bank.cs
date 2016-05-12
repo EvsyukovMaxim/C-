@@ -8,5 +8,10 @@ namespace HomeWork_BankClient
 {
     class Bank
     {
+        public void Transaction (BaseAccount from, BaseAccount to, double sum)
+        {
+            from.WithdrawMoneyFromAccount(sum);
+            to.DepositAccount(sum);
+        }
     }
 }
