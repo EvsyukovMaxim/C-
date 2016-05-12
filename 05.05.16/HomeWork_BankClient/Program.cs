@@ -33,10 +33,9 @@ namespace HomeWork_BankClient
 
             myStandardClient.PrintAccountNumber();
 
-            myStandardClient.CloseClientAccount("2222 2222 2222 2222");
+            myStandardClient.CloseClientAccount("1111 1111 1111 1111");
 
             myStandardClient.PrintAccountNumber();
-
 
 
             myVipClient.AddAccountVIP(myBaseAccount1);
@@ -53,7 +52,7 @@ namespace HomeWork_BankClient
 
             myVipClient.PrintAccountNumber();
 
-            myVipClient.CloseClientAccount("3333 3333 3333 3333");
+            myVipClient.CloseClientAccount("5555 5555 5555 5555");
 
             myBank.Transaction(mySavingAccount2, myAccumulativeAccount3, 10000);
             myStandardClient.PrintAccountNumber();

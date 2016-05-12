@@ -38,15 +38,15 @@ namespace HomeWork_BankClient
         public string AccountNumber { get; protected set; }
         public string ReturnFIO { get { return _ownerName; } }
 
-        public int DepositAccount(double plus)
+        public int DepositAccount(int plus)
         {
-            _currentSum = _currentSum + Convert.ToInt32(plus);
+            _currentSum = _currentSum + plus;
             return _currentSum;
         }
 
-        public int WithdrawMoneyFromAccount(double minus)
+        public int WithdrawMoneyFromAccount(int minus)
         {
-            _currentSum = _currentSum - Convert.ToInt32(minus);
+            _currentSum = _currentSum - minus;
             return _currentSum;
         }
     }
