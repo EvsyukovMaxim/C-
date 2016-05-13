@@ -11,9 +11,11 @@ namespace BankChet_HomeWork
             SberAccount mySberAccount = new SberAccount(100000, "Иванов И.И.");
             AccumulativeAccount myAccumulativeAccount = new AccumulativeAccount(100000, "Петров П.П.", 10000);
             CheckingAccount myCheckingAccount = new CheckingAccount(100000, "Сидоров С.С.");
-            MetalicAccount myMetalicAccount = new MetalicAccount(100000, "Крузенштерн И.Ф.");
+            MetalicAccount myMetalicAccount = new MetalicAccount(0, "Gold", 87.65, 2483.43, "Крузенштерн И.Ф.");
 
             //Вызовы
+
+            //Сберегательный счет
             Console.WriteLine("Сберегательный счет действителен: " + mySberAccount.CloseAccount());
             Console.Write("Остаток после внесения на Сберегательный счет: ");
             mySberAccount.DepositAccount(1000);
@@ -22,26 +24,36 @@ namespace BankChet_HomeWork
             mySberAccount.CloseAccount();
             mySberAccount.DepositAccount(100.10); //Возвращаем "ошибку"
             mySberAccount.WithdrawMoneyFromAccount(100100); //Возвращаем "ошибку"
+            Console.WriteLine("\n");
 
 
+            //Накопительный счет
             Console.Write("Остаток после внесения на Накопительный счет: ");
             myAccumulativeAccount.DepositAccount(1000);
             myAccumulativeAccount.Capitalization(10);
             Console.Write("Остаток после снятия с Накопительного счета: ");
             myAccumulativeAccount.WithdrawMoneyFromAccount(91841.67);
             myAccumulativeAccount.WithdrawMoneyFromAccount(1);
+            Console.WriteLine("\n");
 
 
+            //Расчетный счет
+            //myCheckingAccount.WithdrawMoneyFromAccount(100000);
+            //myCheckingAccount.CloseAccount();
             Console.Write("Остаток после внесения на Расчетный счет: ");
             myCheckingAccount.DepositAccount(1000);
             Console.Write("Остаток после снятия с Расчетного счета: ");
             myCheckingAccount.WithdrawMoneyFromAccount(100);
             myCheckingAccount.Fee(10);
+            Console.WriteLine("\n");
 
 
-            //Console.WriteLine("Количество метала на Металлическом счету: " + myMetalicAccount.ReturnGramAmount() + " грамм");
-            //Console.WriteLine("После внесения 1000 рублей, Мтеллический счет составляет: " + myMetalicAccount.DepositMetalAccount(1000) + "грамм");
-            //Console.WriteLine("После изъятия 1000 рублей, Мтеллический счет составляет: " + myMetalicAccount.WithdrawFromMetalAccount(1000) + "грамм");
+            //Металлический счет
+            //myMetalicAccount.CloseAccount();
+            Console.WriteLine("Баланс в граммах на Металлическом счете: " + myMetalicAccount.ReturnMetallValue + " гр.");
+            Console.WriteLine("Баланс в рублях на Металлическом счете: " + myMetalicAccount.ReturnMetallCurrentSum() + " руб.");
+            Console.WriteLine("Внесено 1500 рублей, баланс в граммах на Металлическом счете: " + myMetalicAccount.DepositMetalAccount(1500) + " гр.");
+            Console.WriteLine("Снято 2750 рублей, баланс в граммах на Металлическом счете: " + myMetalicAccount.WithdrawFromMetalAccount(2750) + " гр.");
         }
 
     }

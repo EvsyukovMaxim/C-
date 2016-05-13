@@ -7,41 +7,38 @@ using System.Threading.Tasks;
 namespace BankChet_HomeWork
 {
     //Обезличенный металлический счет
-    class MetalicAccount : SberAccount
+    class MetalicAccount : GeneralAccount
     {
         protected string _metalType;
         protected double _gramAmount;
         protected double _gramPrice;
 
-        public MetalicAccount (double currentSum, string ownerName) : base(currentSum, ownerName)
+        public MetalicAccount (double currentSum, string metalType, double gramAmount, double gramPrice, string ownerName) : base(currentSum, ownerName)
         {
-            _metalType = "Gold";
-            _gramPrice = 1246.53;
+            _metalType = metalType;
+            _gramPrice = gramPrice;
+            _gramAmount = gramAmount;
         }
 
-        public double ReturnGramAmount() //Возвращает эквивалент в металле (переводит рубли в граммы)
+        public double ReturnMetallValue { get { return Math.Round( _gramAmount,2); } }
+
+        public double ReturnMetallCurrentSum() //Возвращает сумму на Металлическом счету
         {
-            if (_isActive == true)
-            {
-                _gramAmount = _currentSum / _gramPrice;
-                return Math.Round(_gramAmount, 2);
-            }
-            else
-            {
-                return 0; //Это вместо эксепшна, условие для отказа от каких либо действий, в случае, если счет закрыт
-            }
+            _currentSum = _gramAmount * _gramPrice;
+            return Math.Round(_currentSum, 2);
         }
 
         public double DepositMetalAccount(double plus)
         {
             if (_isActive == true)
             {
-                _currentSum = _currentSum + plus;
-                return ReturnGramAmount();
+                _gramAmount = _gramAmount + (plus / _gramPrice);
+                return ReturnMetallValue;
             }
             else
             {
-                return 0; //Это вместо эксепшна, условие для отказа от каких либо действий, в случае, если счет закрыт
+                Console.WriteLine("Счет закрыт, вносить деньги нельзя");
+                return 0;
             }
         }
 
@@ -49,12 +46,13 @@ namespace BankChet_HomeWork
         {
             if (_isActive == true)
             {
-                _currentSum = _currentSum - minus;
-                return ReturnGramAmount();
+                _gramAmount = _gramAmount - (minus / _gramPrice);
+                return ReturnMetallValue;
             }
             else
             {
-                return 0; //Это вместо эксепшна, условие для отказа от каких либо действий, в случае, если счет закрыт
+                Console.WriteLine("Счет закрыт, снимать деньги нельзя");
+                return 0;
             }
         }
     }

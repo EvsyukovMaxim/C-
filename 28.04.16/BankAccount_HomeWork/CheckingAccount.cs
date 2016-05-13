@@ -16,7 +16,7 @@ namespace BankChet_HomeWork
         public void Fee(double feeValue)
         {
             double a = ((_currentSum * (feeValue / 100)) / 12);
-            Console.WriteLine("Сумма платы за обслуживание: " + Math.Round(a, 2));
+            Console.WriteLine("Сумма платы за обслуживание Расчетного счета: " + Math.Round(a, 2));
             Console.Write("Общий остаток Расчетного счета после обслуживания: "); WithdrawMoneyFromAccount(Math.Round(a, 2));
         }
     }
