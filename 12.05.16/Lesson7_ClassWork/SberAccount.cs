@@ -11,7 +11,6 @@ namespace ClassWork_ClassClient
     {
         public SberAccount (int currentSum) : base (currentSum)
         {
-            _currentSum = 50000;
         }
     }
 

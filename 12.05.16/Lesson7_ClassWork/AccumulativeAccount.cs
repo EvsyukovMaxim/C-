@@ -11,7 +11,6 @@ namespace ClassWork_ClassClient
     {
         public AccumulativeAccount (int currentSum) : base (currentSum)
         {
-            currentSum = 100000;
         }
     }
 }
