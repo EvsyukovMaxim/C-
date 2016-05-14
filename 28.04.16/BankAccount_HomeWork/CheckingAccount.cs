@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace BankChet_HomeWork
 {
     //Расчетный  счет
-    class CheckingAccount : SberAccount
+    class CheckingAccount : GeneralAccount
     {
         public CheckingAccount (double currentSum, string ownerName) : base(currentSum, ownerName)
         {

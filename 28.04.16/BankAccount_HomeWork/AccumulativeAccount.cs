@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace BankChet_HomeWork
 {
     //Накопительный счет
-    class AccumulativeAccount : SberAccount
+    class AccumulativeAccount : GeneralAccount
     {
-        protected uint _firstDeposit; //Первоначальный взнос для Накопительного счета
-        public AccumulativeAccount (double currentSum, string ownerName, uint firstDeposit) : base(currentSum, ownerName)
+        protected double _firstDeposit; //Первоначальный взнос для Накопительного счета
+        public AccumulativeAccount (double currentSum, string ownerName, double firstDeposit) : base(currentSum, ownerName)
         {
             _firstDeposit = firstDeposit;
         }

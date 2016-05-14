@@ -9,7 +9,7 @@ namespace BankChet_HomeWork
             //Экземпляры классов
             GeneralAccount myGeneralAccount = new GeneralAccount(100000, "Евсюков М.В.");
             SberAccount mySberAccount = new SberAccount(100000, "Иванов И.И.");
-            AccumulativeAccount myAccumulativeAccount = new AccumulativeAccount(100000, "Петров П.П.", 10000);
+            AccumulativeAccount myAccumulativeAccount = new AccumulativeAccount(10000, "Петров П.П.", 10000);
             CheckingAccount myCheckingAccount = new CheckingAccount(100000, "Сидоров С.С.");
             MetalicAccount myMetalicAccount = new MetalicAccount(0, "Gold", 87.65, 2483.43, "Крузенштерн И.Ф.");
 
@@ -34,7 +34,7 @@ namespace BankChet_HomeWork
             myAccumulativeAccount.DepositAccount(1000);
             myAccumulativeAccount.Capitalization(10);
             Console.Write("Остаток после снятия с Накопительного счета: ");
-            myAccumulativeAccount.WithdrawMoneyFromAccount(91841.67);
+            myAccumulativeAccount.WithdrawMoneyFromAccount(1091.67);
             myAccumulativeAccount.WithdrawMoneyFromAccount(1);
             Console.WriteLine("\n");
 
