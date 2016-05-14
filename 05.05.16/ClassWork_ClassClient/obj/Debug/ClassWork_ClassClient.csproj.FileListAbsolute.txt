@@ -1,0 +1,6 @@
+D:\Repository_GitHub\CS\05.05.16\ClassWork_ClassClient\bin\Debug\BankChet_HomeWork.exe.config
+D:\Repository_GitHub\CS\05.05.16\ClassWork_ClassClient\obj\Debug\BankChet_HomeWork.exe
+D:\Repository_GitHub\CS\05.05.16\ClassWork_ClassClient\obj\Debug\BankChet_HomeWork.pdb
+D:\Repository_GitHub\CS\05.05.16\ClassWork_ClassClient\bin\Debug\BankChet_HomeWork.exe
+D:\Repository_GitHub\CS\05.05.16\ClassWork_ClassClient\bin\Debug\BankChet_HomeWork.pdb
+D:\Repository_GitHub\CS\05.05.16\ClassWork_ClassClient\obj\Debug\ClassWork_ClassClient.csprojResolveAssemblyReference.cache

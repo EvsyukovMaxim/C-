@@ -9,9 +9,9 @@ namespace ClassWork_ClassClient
     //Сберегательный счет
     class SberAccount : GeneralAccount
     {
-        public SberAccount (int _currentSum) : base (_currentSum)
+        public SberAccount (int currentSum) : base (currentSum)
         {
-
+            _currentSum = 50000;
         }
     }
 

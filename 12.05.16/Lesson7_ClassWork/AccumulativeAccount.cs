@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace ClassWork_ClassClient
 {
     //Накопительный счет
-    class AccumulativeAccount : SberAccount
+    class AccumulativeAccount : GeneralAccount
     {
-        public AccumulativeAccount (int _currentSum) : base (_currentSum)
+        public AccumulativeAccount (int currentSum) : base (currentSum)
         {
-
+            currentSum = 100000;
         }
     }
 }

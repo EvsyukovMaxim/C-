@@ -1,0 +1,6 @@
+D:\Repository_GitHub\CS\28.04.16\BankAccount_HomeWork\bin\Debug\BankChet_HomeWork.exe.config
+D:\Repository_GitHub\CS\28.04.16\BankAccount_HomeWork\bin\Debug\BankChet_HomeWork.exe
+D:\Repository_GitHub\CS\28.04.16\BankAccount_HomeWork\bin\Debug\BankChet_HomeWork.pdb
+D:\Repository_GitHub\CS\28.04.16\BankAccount_HomeWork\obj\Debug\BankAccount_HomeWork.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\28.04.16\BankAccount_HomeWork\obj\Debug\BankChet_HomeWork.exe
+D:\Repository_GitHub\CS\28.04.16\BankAccount_HomeWork\obj\Debug\BankChet_HomeWork.pdb

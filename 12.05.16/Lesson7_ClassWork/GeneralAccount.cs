@@ -34,9 +34,6 @@ namespace ClassWork_ClassClient
                 return _isActive;
             }
         }
-        public int ReturnCurrentSum()
-        {
-            return _currentSum;
-        }
+        public int ReturnCurrentSum { get { return _currentSum; } }
     }
 }

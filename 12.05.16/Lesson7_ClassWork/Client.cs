@@ -11,28 +11,14 @@ namespace ClassWork_ClassClient
     { 
         SberAccount mySberAccount = new SberAccount(50000);
         AccumulativeAccount myAccumulativeAccount = new AccumulativeAccount(100000);
-        public int GetSum
-        {
-            get
-            {
-                int Sum = 0;
-                List<GeneralAccount> accounts = new List<GeneralAccount>();
-                accounts.Add(mySberAccount);
-                accounts.Add(myAccumulativeAccount);
-                for (int i = 0; i < accounts.Count; i++)
-                {
-                    Sum = Sum + accounts[i].ReturnCurrentSum();
-                }
-                return Sum;
-            }
-        }
-
+        public int GetSumSber { get { return mySberAccount.ReturnCurrentSum; } }
+        public int GetSumAccum { get { return myAccumulativeAccount.ReturnCurrentSum; } }
         public int CompareTo(object obj)
         {
-            Client client =(Client)obj;
-            if (GetSum > client.GetSum)
+            Client client = (Client)obj;
+            if (client.GetSumAccum > client.GetSumSber)
                 return 1;
-            if (GetSum < client.GetSum)
+            if (client.GetSumAccum < client.GetSumSber)
                 return -1;
 
             return 0;

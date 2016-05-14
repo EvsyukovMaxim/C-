@@ -1,0 +1,6 @@
+D:\Repository_GitHub\CS\05.05.16\HomeWork_BankClient\bin\Debug\HomeWork_BankClient.exe.config
+D:\Repository_GitHub\CS\05.05.16\HomeWork_BankClient\bin\Debug\HomeWork_BankClient.exe
+D:\Repository_GitHub\CS\05.05.16\HomeWork_BankClient\bin\Debug\HomeWork_BankClient.pdb
+D:\Repository_GitHub\CS\05.05.16\HomeWork_BankClient\obj\Debug\HomeWork_BankClient.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\05.05.16\HomeWork_BankClient\obj\Debug\HomeWork_BankClient.exe
+D:\Repository_GitHub\CS\05.05.16\HomeWork_BankClient\obj\Debug\HomeWork_BankClient.pdb

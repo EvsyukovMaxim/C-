@@ -11,10 +11,10 @@ namespace ClassWork_ClassClient
     {
         static void Main(string[] args)
         {
-            SberAccount myClient = new SberAccount(50000);
-            AccumulativeAccount myClient2 = new AccumulativeAccount(10000);
-            Console.WriteLine(myClient.ReturnCurrentSum);
-            Console.WriteLine(myClient.ReturnCurrentSum);
+            Client myClient = new Client();
+            Client myClient2 = new Client();
+            Console.WriteLine(myClient.GetSumAccum);
+            Console.WriteLine(myClient.GetSumSber);
 
             List<Client> client = new List <Client>();
 
