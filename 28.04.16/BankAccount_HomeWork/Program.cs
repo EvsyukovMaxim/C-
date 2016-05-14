@@ -18,7 +18,9 @@ namespace BankChet_HomeWork
             //Сберегательный счет
             Console.WriteLine("Сберегательный счет действителен: " + mySberAccount.CloseAccount());
             Console.Write("Остаток после внесения на Сберегательный счет: ");
-            mySberAccount.DepositAccount(1000);
+            mySberAccount.DepositAccount(1100);
+            Console.Write("Остаток после внесения на Сберегательный счет: ");
+            mySberAccount.DepositAccount(-100);
             Console.Write("Остаток после снятия со Сберегательного счета: ");
             mySberAccount.WithdrawMoneyFromAccount(101000);
             mySberAccount.CloseAccount();
