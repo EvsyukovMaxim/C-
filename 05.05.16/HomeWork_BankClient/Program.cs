@@ -29,7 +29,7 @@ namespace HomeWork_BankClient
             myStandardClient.AddAccount(myBaseAccount1);
             myStandardClient.AddAccount(mySavingAccount2);
             myStandardClient.AddAccount(myAccumulativeAccount3);
-            myStandardClient.AddAccount(myMetallAccount4);
+            myStandardClient.AddAccount(myMetallAccount4); //4-ый экземпляр для проверки ограничения списка Standard
 
             myStandardClient.PrintAccountNumber();
 
@@ -38,17 +38,17 @@ namespace HomeWork_BankClient
             myStandardClient.PrintAccountNumber();
 
 
-            myVipClient.AddAccountVIP(myBaseAccount1);
-            myVipClient.AddAccountVIP(mySavingAccount2);
-            myVipClient.AddAccountVIP(myAccumulativeAccount3);
-            myVipClient.AddAccountVIP(myMetallAccount4); //4-ый экземпляр для проверки ограничения списка Standard
-            myVipClient.AddAccountVIP(myBaseAccount5);
-            myVipClient.AddAccountVIP(mySavingAccount6);
-            myVipClient.AddAccountVIP(myAccumulativeAccount7);
-            myVipClient.AddAccountVIP(myMetallAccount8);
-            myVipClient.AddAccountVIP(myBaseAccount9);
-            myVipClient.AddAccountVIP(mySavingAccount10);
-            myVipClient.AddAccountVIP(myAccumulativeAccount11); //11-ый экземпляр для проверки ограничения списка VIP
+            myVipClient.AddAccount(myBaseAccount1);
+            myVipClient.AddAccount(mySavingAccount2);
+            myVipClient.AddAccount(myAccumulativeAccount3);
+            myVipClient.AddAccount(myMetallAccount4);
+            myVipClient.AddAccount(myBaseAccount5);
+            myVipClient.AddAccount(mySavingAccount6);
+            myVipClient.AddAccount(myAccumulativeAccount7);
+            myVipClient.AddAccount(myMetallAccount8);
+            myVipClient.AddAccount(myBaseAccount9);
+            myVipClient.AddAccount(mySavingAccount10);
+            myVipClient.AddAccount(myAccumulativeAccount11); //11-ый экземпляр для проверки ограничения списка VIP
 
             myVipClient.PrintAccountNumber();
 

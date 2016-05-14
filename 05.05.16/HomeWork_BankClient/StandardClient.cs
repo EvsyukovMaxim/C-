@@ -6,41 +6,12 @@ using System.Threading.Tasks;
 
 namespace HomeWork_BankClient
 {
-    class StandardClient
+    class StandardClient : BankClient
     {
-        List<BaseAccount> accountsList = new List<BaseAccount>();
-
-        public void AddAccount (BaseAccount account)
+        public override void AddAccount(BaseAccount account)
         {
-            int listCount = accountsList.Count;
-            if (listCount < 3)
-            {
-                accountsList.Add(account);
-            }
-            else
-            {
-                Console.WriteLine("Можно только 3 счета");
-            }
-        }
-
-        public void PrintAccountNumber()
-        {
-            for (int i = 0; i < accountsList.Count; i++)
-            {
-                Console.WriteLine($"Сумма Обычного клиента: {accountsList[i].ReturnCurrentSum}, Номер счета: {accountsList[i].AccountNumber}, ФИО: {accountsList[i].ReturnFIO}");
-            }
-        }
-
-        public void CloseClientAccount(string accountNumber)
-        {
-            for (int i = 0; i < accountsList.Count; i++)
-            {
-                if (accountsList[i].AccountNumber == accountNumber)
-                {
-                    accountsList.RemoveAt(i);
-                    Console.WriteLine("Счет с номером: " + accountNumber + " - закрыт");
-                }
-            }
+            n = 3;
+            base.AddAccount(account);
         }
     }
 }
