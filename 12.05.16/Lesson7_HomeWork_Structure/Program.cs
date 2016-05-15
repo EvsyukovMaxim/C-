@@ -10,8 +10,11 @@ namespace Lesson7_HomeWork_Structure
     {
         static void Main(string[] args)
         {
-            Fraction f = new Fraction(32,8);
-            Console.WriteLine(f.PrintSum());
+            Fraction fraction1 = new Fraction(-1,0);
+            Fraction fraction2 = new Fraction(-2,0);
+            fraction1.PrintSum();
+            fraction2.PrintSum();
+
         }
     }
 }
