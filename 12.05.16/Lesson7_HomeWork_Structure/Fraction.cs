@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 namespace Lesson7_HomeWork_Structure
 {
-    //class Fraction
-    //{
-        public struct FractionXY
+    public struct Fraction
+    {
+        public double X { get; set; }
+        public double Y { get; set; }
+        //public double Z { get; set; }
+        public Fraction(double x, double y)
         {
-            public double X { get; private set; }
-            public double Y { get; private set; }
-            public Cleavage(double x, double y)
-            {
-                X = x;
-                Y = y;
-            }
+            X = x;
+            Y = y;
         }
-    //}
+        public double PrintSum ()
+        {
+            return (X / Y);
+        }
+    }
 }
