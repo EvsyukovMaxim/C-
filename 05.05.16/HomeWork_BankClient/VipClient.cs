@@ -11,7 +11,7 @@ namespace HomeWork_BankClient
         List<BaseAccount> accountsList = new List<BaseAccount>();
         public override void AddAccount(BaseAccount account)
         {
-            n = 10;
+            N = 10;
             base.AddAccount(account);
         }
     }

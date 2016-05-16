@@ -8,13 +8,13 @@ namespace HomeWork_BankClient
 {
     abstract class BankClient
     {
-        public int n { get; set; }
+        public int N { get; protected set; }
         List<BaseAccount> accountsList = new List<BaseAccount>();
 
         public virtual void AddAccount(BaseAccount account)
         {
             int listCount = accountsList.Count;
-            if (listCount < n)
+            if (listCount < N)
             {
                 accountsList.Add(account);
             }
