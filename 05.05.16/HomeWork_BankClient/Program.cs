@@ -24,7 +24,7 @@ namespace HomeWork_BankClient
             MetallAccount myMetallAccount8 = new MetallAccount("8888 8888 8888 8888");
             BaseAccount myBaseAccount9 = new BaseAccount("9999 9999 9999 9999");
             SavingAccount mySavingAccount10 = new SavingAccount("1010 1010 1010 1010");
-            AccumulativeAccount myAccumulativeAccount11 = new AccumulativeAccount("0000 0000 0000 0000"); 
+            AccumulativeAccount myAccumulativeAccount11 = new AccumulativeAccount("0000 0000 0000 0000");
 
             myStandardClient.AddAccount(myBaseAccount1);
             myStandardClient.AddAccount(mySavingAccount2);

@@ -10,7 +10,6 @@ namespace HomeWork_BankClient
     {
         public int AccountsQuantity { get; protected set; }
         List<BaseAccount> accountsList = new List<BaseAccount>();
-
         public virtual void AddAccount(BaseAccount account)
         {
             int listCount = accountsList.Count;
@@ -20,7 +19,7 @@ namespace HomeWork_BankClient
             }
             else
             {
-                Console.WriteLine("Можно только 3 счета");
+                Console.WriteLine("Доступное количество счетов, не более: " + AccountsQuantity);
             }
         }
 
@@ -28,7 +27,7 @@ namespace HomeWork_BankClient
         {
             for (int i = 0; i < accountsList.Count; i++)
             {
-                Console.WriteLine($"Сумма Обычного клиента: {accountsList[i].ReturnCurrentSum}, Номер счета: {accountsList[i].AccountNumber}, ФИО: {accountsList[i].ReturnFIO}");
+                Console.WriteLine($"Сумма Обычного клиента: {accountsList[i].ReturnCurrentSum}, Номер счета: {accountsList[i].AccountNumber}, ФИО: {accountsList[i].ReturnFIO}, Активен: {accountsList[i].PrintIsActive}");
             }
         }
 
@@ -38,8 +37,9 @@ namespace HomeWork_BankClient
             {
                 if (accountsList[i].AccountNumber == accountNumber)
                 {
-                    accountsList.RemoveAt(i);
+                    accountsList[i].CloseAccount();
                     Console.WriteLine("Счет с номером: " + accountNumber + " - закрыт");
+                    
                 }
             }
         }

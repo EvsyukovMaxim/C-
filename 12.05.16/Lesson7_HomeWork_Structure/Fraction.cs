@@ -35,13 +35,13 @@ namespace Lesson7_HomeWork_Structure
             }
         }
 
-        public List<Fraction> fractionsList;
+        //public List<Fraction> fractionsList;
 
-        fractionsList.Add(fraction1);
-        fractionsList.Add(fraction2);
-            for (int i = 0; i<fractionsList.Count;)
-            {
+        //fractionsList.Add(fraction1);
+        //fractionsList.Add(fraction2);
+        //    for (int i = 0; i<fractionsList.Count;)
+        //    {
 
-            }
+        //    }
     }
 }

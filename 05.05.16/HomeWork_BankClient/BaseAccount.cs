@@ -23,16 +23,11 @@ namespace HomeWork_BankClient
 
         public bool CloseAccount()
         {
-            if (_currentSum <= 0)
-            {
                 _isActive = false;
                 return _isActive;
-            }
-            else
-            {
-                return _isActive;
-            }
         }
+
+        public bool PrintIsActive { get { return _isActive; } }
         public int ReturnCurrentSum { get { return _currentSum; } }
 
         public string AccountNumber { get; protected set; }
