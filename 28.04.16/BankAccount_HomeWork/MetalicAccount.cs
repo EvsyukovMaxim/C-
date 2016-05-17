@@ -28,31 +28,29 @@ namespace BankChet_HomeWork
             return Math.Round(_currentSum, 2);
         }
 
-        public double DepositMetalAccount(double plus)
+        public override void DepositAccount(double plus)
         {
             if (_isActive == true)
             {
                 _gramAmount = _gramAmount + (plus / _gramPrice);
-                return ReturnMetallValue;
+                Console.WriteLine(ReturnMetallValue + " гр.");
             }
             else
             {
                 Console.WriteLine("Счет закрыт, вносить деньги нельзя");
-                return 0;
             }
         }
 
-        public double WithdrawFromMetalAccount(double minus)
+        public override void WithdrawMoneyFromAccount(double minus)
         {
             if (_isActive == true)
             {
                 _gramAmount = _gramAmount - (minus / _gramPrice);
-                return ReturnMetallValue;
+                Console.WriteLine(ReturnMetallValue + " гр.");
             }
             else
             {
                 Console.WriteLine("Счет закрыт, снимать деньги нельзя");
-                return 0;
             }
         }
     }
