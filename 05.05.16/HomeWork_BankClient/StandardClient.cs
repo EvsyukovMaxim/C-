@@ -10,7 +10,7 @@ namespace HomeWork_BankClient
     {
         public override void AddAccount(BaseAccount account)
         {
-            N = 3;
+            AccountsQuantity = 3;
             base.AddAccount(account);
         }
     }
