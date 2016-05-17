@@ -13,7 +13,7 @@ namespace BankChet_HomeWork
         protected double _gramAmount;
         protected double _gramPrice;
 
-        public MetalicAccount (double currentSum, string metalType, double gramAmount, double gramPrice, string ownerName) : base(currentSum, ownerName)
+        public MetalicAccount (string metalType, double gramAmount, double gramPrice, string ownerName) : base(0, ownerName)
         {
             _metalType = metalType;
             _gramPrice = gramPrice;

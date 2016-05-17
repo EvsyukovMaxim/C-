@@ -11,7 +11,7 @@ namespace BankChet_HomeWork
             SberAccount mySberAccount = new SberAccount(100000, "Иванов И.И.");
             AccumulativeAccount myAccumulativeAccount = new AccumulativeAccount(10000, "Петров П.П.", 10000);
             CheckingAccount myCheckingAccount = new CheckingAccount(100000, "Сидоров С.С.");
-            MetalicAccount myMetalicAccount = new MetalicAccount(0, "Gold", 87.65, 2483.43, "Крузенштерн И.Ф.");
+            MetalicAccount myMetalicAccount = new MetalicAccount("Gold", 87.65, 2483.43, "Крузенштерн И.Ф.");
 
             //Вызовы
 
