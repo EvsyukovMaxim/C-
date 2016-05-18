@@ -60,6 +60,5 @@ namespace BankChet_HomeWork
             myMetalicAccount.WithdrawMoneyFromAccount(2750);
             myMetalicAccount.WithdrawMoneyFromAccount(216500);
         }
-
     }
 }
