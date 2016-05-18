@@ -58,7 +58,7 @@ namespace BankChet_HomeWork
             myMetalicAccount.DepositAccount(1500);
             Console.WriteLine("Снято 2750 рублей, баланс в граммах на Металлическом счете: ");
             myMetalicAccount.WithdrawMoneyFromAccount(2750);
-            myMetalicAccount.WithdrawMoneyFromAccount(216500);
+            myMetalicAccount.WithdrawMoneyFromAccount(216422.65);
         }
     }
 }
