@@ -22,10 +22,12 @@ namespace BankChet_HomeWork
 
         public double ReturnMetallValue { get { return Math.Round( _gramAmount,2); } }
 
-        public double ReturnMetallCurrentSum() //Возвращает сумму на Металлическом счету
-        {
-            _currentSum = _gramAmount * _gramPrice;
-            return Math.Round(_currentSum, 2);
+        public override double ReturnCurrentSum  //Возвращает сумму на Металлическом счету
+        { get
+            {
+                _currentSum = _gramAmount * _gramPrice;
+                return Math.Round(_currentSum, 2);
+            }
         }
 
         public override void DepositAccount(double plus)
@@ -45,8 +47,15 @@ namespace BankChet_HomeWork
         {
             if (_isActive == true)
             {
-                _gramAmount = _gramAmount - (minus / _gramPrice);
-                Console.WriteLine(ReturnMetallValue + " гр.");
+                if (minus <= ReturnCurrentSum)
+                {
+                    _gramAmount = _gramAmount - (minus / _gramPrice);
+                    Console.WriteLine(ReturnMetallValue + " гр.");
+                }
+                else
+                {
+                    Console.WriteLine("Остаток на счете меньше снимаемой суммы");
+                }
             }
             else
             {

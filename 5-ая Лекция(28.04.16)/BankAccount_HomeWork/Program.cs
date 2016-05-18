@@ -53,11 +53,12 @@ namespace BankChet_HomeWork
             //Металлический счет
             //myMetalicAccount.CloseAccount();
             Console.WriteLine("Баланс в граммах на Металлическом счете: " + myMetalicAccount.ReturnMetallValue + " гр.");
-            Console.WriteLine("Баланс в рублях на Металлическом счете: " + myMetalicAccount.ReturnMetallCurrentSum() + " руб.");
+            Console.WriteLine("Баланс в рублях на Металлическом счете: " + myMetalicAccount.ReturnCurrentSum + " руб.");
             Console.WriteLine("Внесено 1500 рублей, баланс в граммах на Металлическом счете: ");
             myMetalicAccount.DepositAccount(1500);
             Console.WriteLine("Снято 2750 рублей, баланс в граммах на Металлическом счете: ");
             myMetalicAccount.WithdrawMoneyFromAccount(2750);
+            myMetalicAccount.WithdrawMoneyFromAccount(216500);
         }
 
     }

@@ -68,5 +68,7 @@ namespace BankChet_HomeWork
                 Console.WriteLine("Счет закрыт, снимать деньги нельзя");
             }
         }
+
+        public virtual double ReturnCurrentSum { get { return _currentSum; } }
     }
 }
