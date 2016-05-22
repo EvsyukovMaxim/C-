@@ -11,7 +11,7 @@ namespace Lesson7_HomeWork_Structure
         static void Main(string[] args)
         {
             object f1 = Fraction.ReturnFraction(2, 4);
-            object f2 = Fraction.ReturnFraction(3, 5);
+            object f2 = Fraction.ReturnFraction(0, 5);
 
             Fraction.PrintFraction(f1);
             Fraction.PrintFraction(f2);

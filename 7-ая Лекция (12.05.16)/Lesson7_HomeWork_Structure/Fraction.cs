@@ -92,9 +92,18 @@ namespace Lesson7_HomeWork_Structure
         public object Division(Fraction f2)
         {
             Fraction f1 = new Fraction(_numerator, _denominator);
-            f1._numerator = f1._numerator * f2._denominator;
-            f1._denominator = f1._denominator * f2._numerator;
-            return f1;
+            if (f2._numerator != 0)
+            {
+                f1._numerator = f1._numerator * f2._denominator;
+                f1._denominator = f1._denominator * f2._numerator;
+                return f1;
+            }
+            else
+            {
+                Console.WriteLine("Знаменатель не может быть равен нулю после деления");
+                return f1;
+            }
+
         }
     }
 }
