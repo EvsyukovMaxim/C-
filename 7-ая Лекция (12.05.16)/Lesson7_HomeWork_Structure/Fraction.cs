@@ -18,25 +18,33 @@ namespace Lesson7_HomeWork_Structure
             {
                 _denominator = denominator;
             }
-            else
-            {
-                Console.WriteLine("Нельзя делить на ноль");
-            }
         }
         public static object ReturnFraction(int numerator, int denominator)
         {
             Fraction example = new Fraction(numerator,denominator);
-            Console.WriteLine($"{example._numerator}/{example._denominator}");
-            return example;
+            if (denominator > 0)
+            {
+                return example;
+            }
+            else if (denominator == 0)
+            {
+                Console.WriteLine("Нельзя делить на ноль");
+                return 0;
+            }
+            else
+            {
+                Console.WriteLine("Знаменатель должен быть положительным");
+                return 0;
+            }
         }
 
-        //public List<Fraction> fractionsList;
-
-        //fractionsList.Add(fraction1);
-        //fractionsList.Add(fraction2);
-        //    for (int i = 0; i<fractionsList.Count;)
-        //    {
-
-        //    }
+        public override string ToString()
+        {
+            return $"{_numerator}/{_denominator}";
+        }
+        public static void PrintFraction (object example)
+        {
+            Console.WriteLine(example.ToString());
+        }
     }
 }
