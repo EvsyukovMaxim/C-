@@ -14,7 +14,7 @@ namespace ClassWork_ClassClient
             Client myClient = new Client();
             Client myClient2 = new Client();
             Console.WriteLine(myClient.GetSumAccum);
-            Console.WriteLine(myClient.GetSumSber);
+            Console.WriteLine(myClient2.GetSumSber);
 
             List<Client> client = new List <Client>();
 

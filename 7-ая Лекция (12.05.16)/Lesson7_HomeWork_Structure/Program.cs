@@ -10,8 +10,8 @@ namespace Lesson7_HomeWork_Structure
     {
         static void Main(string[] args)
         {
-            object f1 = Fraction.ReturnFraction(2, 4);
-            object f2 = Fraction.ReturnFraction(0, 5);
+            object f1 = Fraction.ReturnFraction(1, 2);
+            object f2 = Fraction.ReturnFraction(1, 3);
 
             Fraction.PrintFraction(f1);
             Fraction.PrintFraction(f2);
@@ -20,6 +20,8 @@ namespace Lesson7_HomeWork_Structure
             Console.WriteLine(((Fraction)f1).Subtraction((Fraction)f2));
             Console.WriteLine(((Fraction)f1).Multiplication((Fraction)f2));
             Console.WriteLine(((Fraction)f1).Division((Fraction)f2));
+
+            Console.WriteLine(((Fraction)f1).CompareTo((Fraction)f2));
         }
     }
 }

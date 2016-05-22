@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson7_HomeWork_Structure
 {
-    public struct Fraction
+    public struct Fraction : IComparable
     {
         private int _numerator;
         private int _denominator;
@@ -103,7 +103,20 @@ namespace Lesson7_HomeWork_Structure
                 Console.WriteLine("Знаменатель не может быть равен нулю после деления");
                 return f1;
             }
+        }
 
+        public int CompareTo(object f2)
+        {
+            Fraction f1 = (Fraction)f2;
+            if (_numerator * f1._denominator > _denominator * f1._numerator)
+            {
+                return 1;
+            }
+            if (_numerator * f1._denominator < _denominator * f1._numerator)
+            {
+                return -1;
+            }
+            return 0;
         }
     }
 }

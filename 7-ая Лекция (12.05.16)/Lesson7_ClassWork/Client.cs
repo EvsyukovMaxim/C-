@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 namespace ClassWork_ClassClient
 {
     class Client : IComparable
-    { 
-        SberAccount mySberAccount = new SberAccount(50000);
+    {
         AccumulativeAccount myAccumulativeAccount = new AccumulativeAccount(100000);
+        SberAccount mySberAccount = new SberAccount(50000);
         public int GetSumSber { get { return mySberAccount.ReturnCurrentSum; } }
         public int GetSumAccum { get { return myAccumulativeAccount.ReturnCurrentSum; } }
         public int CompareTo(object obj)
