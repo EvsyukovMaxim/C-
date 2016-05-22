@@ -49,8 +49,52 @@ namespace Lesson7_HomeWork_Structure
 
         public object Addition (Fraction f2)
         {
-            Fraction newFraction = new Fraction(_numerator + f2._numerator,_denominator + f2._denominator);
-            return newFraction;
+            Fraction f1 = new Fraction(_numerator,_denominator);
+            if (f1._denominator != f2._denominator)
+            {
+                f1._numerator = f1._numerator*f2._denominator + f2._numerator*f2._denominator;
+                f1._denominator = f1._denominator * f2._denominator;
+                return f1;
+            }
+            else
+            {
+                f1._numerator = f1._numerator + f2._numerator;
+                f1._denominator = f2._denominator;
+                return f1;
+            }
+        }
+
+        public object Subtraction(Fraction f2)
+        {
+            Fraction f1 = new Fraction(_numerator, _denominator);
+            if (f1._denominator != f2._denominator)
+            {
+                f1._numerator = f1._numerator * f2._denominator - f2._numerator * f2._denominator;
+                f1._denominator = f1._denominator * f2._denominator;
+                return f1;
+            }
+            else
+            {
+                f1._numerator = f1._numerator - f2._numerator;
+                f1._denominator = f2._denominator;
+                return f1;
+            }
+        }
+
+        public object Multiplication(Fraction f2)
+        {
+            Fraction f1 = new Fraction(_numerator, _denominator);
+            f1._numerator = f1._numerator * f2._numerator;
+            f1._denominator = f1._denominator * f2._denominator;
+            return f1;
+        }
+
+        public object Division(Fraction f2)
+        {
+            Fraction f1 = new Fraction(_numerator, _denominator);
+            f1._numerator = f1._numerator * f2._denominator;
+            f1._denominator = f1._denominator * f2._numerator;
+            return f1;
         }
     }
 }
