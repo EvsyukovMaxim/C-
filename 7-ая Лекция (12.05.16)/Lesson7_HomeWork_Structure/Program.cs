@@ -10,10 +10,8 @@ namespace Lesson7_HomeWork_Structure
     {
         static void Main(string[] args)
         {
-            Fraction fraction1 = new Fraction(1,2);
-            Fraction fraction2 = new Fraction(2,1);
-            fraction1.PrintSum();
-            fraction2.PrintSum();
+            Fraction.ReturnFraction(2, 3);
+            Fraction.ReturnFraction(1, 3);
         }
     }
 }

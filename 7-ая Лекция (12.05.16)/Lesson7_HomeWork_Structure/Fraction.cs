@@ -8,31 +8,26 @@ namespace Lesson7_HomeWork_Structure
 {
     public struct Fraction
     {
-        public int X { get; set; }
-        public uint Y { get; set; }
-        public Fraction(int x, uint y)
+        private int _numerator;
+        private int _denominator;
+        public Fraction(int numerator, int denominator)
         {
-            X = x;
-            Y = 1;
-            if (y != 0)
+            _numerator = numerator;
+            _denominator = 1;
+            if (denominator != 0)
             {
-                Y = y;
+                _denominator = denominator;
             }
             else
             {
                 Console.WriteLine("Нельзя делить на ноль");
             }
         }
-        public void PrintSum ()
+        public static object ReturnFraction(int numerator, int denominator)
         {
-            if (Y > 0)
-            {
-                Console.WriteLine(X / Y);
-            }
-            else
-            {
-                Console.WriteLine("Введены некорректные данные");
-            }
+            Fraction example = new Fraction(numerator,denominator);
+            Console.WriteLine($"{example._numerator}/{example._denominator}");
+            return example;
         }
 
         //public List<Fraction> fractionsList;
