@@ -13,7 +13,7 @@ namespace Lesson7_HomeWork_Structure
         public Fraction(int numerator, int denominator)
         {
             _numerator = numerator;
-            _denominator = 1;
+            _denominator = denominator;
             if (denominator != 0)
             {
                 _denominator = denominator;
@@ -45,6 +45,12 @@ namespace Lesson7_HomeWork_Structure
         public static void PrintFraction (object example)
         {
             Console.WriteLine(example.ToString());
+        }
+
+        public object Addition (Fraction f2)
+        {
+            Fraction newFraction = new Fraction(_numerator + f2._numerator,_denominator + f2._denominator);
+            return newFraction;
         }
     }
 }

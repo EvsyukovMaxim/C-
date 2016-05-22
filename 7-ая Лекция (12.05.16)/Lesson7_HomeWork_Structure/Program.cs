@@ -15,6 +15,9 @@ namespace Lesson7_HomeWork_Structure
 
             Fraction.PrintFraction(f1);
             Fraction.PrintFraction(f2);
+
+            f1.Addition(f2);
+            
         }
     }
 }
