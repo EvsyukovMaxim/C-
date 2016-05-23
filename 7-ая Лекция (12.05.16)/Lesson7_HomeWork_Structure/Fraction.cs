@@ -33,7 +33,7 @@ namespace Lesson7_HomeWork_Structure
             }
             else
             {
-                Console.WriteLine("Знаменатель должен быть положительным");
+                Console.WriteLine("Знаменатель должен быть положительным ");
                 return 0;
             }
         }
