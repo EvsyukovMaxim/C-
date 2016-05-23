@@ -44,7 +44,7 @@ namespace Lesson7_HomeWork_Structure
 
             for (int i = 0; i < randomFractions.Length; i++)
             {
-                sum = ((Fraction)sum).CompareTo((Fraction)randomFractions[i]);
+                ((Fraction)sum) = ((Fraction)sum).Addition((Fraction)randomFractions[i]);
             }
 
             Console.WriteLine("Сумма всех дробей равна: " + sum);
