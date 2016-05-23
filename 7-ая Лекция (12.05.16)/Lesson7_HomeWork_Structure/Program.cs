@@ -48,6 +48,7 @@ namespace Lesson7_HomeWork_Structure
             }
 
             Console.WriteLine("Сумма всех дробей равна: " + sum);
+            //Изменения !!!!
         }
     }
 }
