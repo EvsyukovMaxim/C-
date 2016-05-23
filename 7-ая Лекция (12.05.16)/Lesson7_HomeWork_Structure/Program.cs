@@ -10,18 +10,18 @@ namespace Lesson7_HomeWork_Structure
     {
         static void Main(string[] args)
         {
-            object f1 = Fraction.ReturnFraction(3, 1);
+            object f1 = Fraction.ReturnFraction(3, 0);
             object f2 = Fraction.ReturnFraction(1, 5);
 
-            Fraction.PrintFraction(f1);
-            Fraction.PrintFraction(f2);
+            //Fraction.PrintFraction(f1);
+            //Fraction.PrintFraction(f2);
 
             Console.WriteLine(((Fraction)f1).Addition((Fraction)f2));
-            Console.WriteLine(((Fraction)f1).Subtraction((Fraction)f2));
-            Console.WriteLine(((Fraction)f1).Multiplication((Fraction)f2));
-            Console.WriteLine(((Fraction)f1).Division((Fraction)f2));
+            //Console.WriteLine(((Fraction)f1).Subtraction((Fraction)f2));
+            //Console.WriteLine(((Fraction)f1).Multiplication((Fraction)f2));
+            //Console.WriteLine(((Fraction)f1).Division((Fraction)f2));
 
-            Console.WriteLine(((Fraction)f1).CompareTo((Fraction)f2));
+            //Console.WriteLine(((Fraction)f1).CompareTo((Fraction)f2));
 
 
             //Console.WriteLine("Необходимо ввести количество дробей, которые попадут в массив: ");
