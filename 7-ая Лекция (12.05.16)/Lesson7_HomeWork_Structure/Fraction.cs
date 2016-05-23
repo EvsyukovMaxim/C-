@@ -54,7 +54,7 @@ namespace Lesson7_HomeWork_Structure
             {
                 f1._numerator = f1._numerator*f2._denominator + f2._numerator*f2._denominator;
                 f1._denominator = f1._denominator * f2._denominator;
-                return (Fraction)f1;
+                return f1;
             }
             else
             {
