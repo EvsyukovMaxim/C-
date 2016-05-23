@@ -21,7 +21,7 @@ namespace Lesson7_HomeWork_Structure
         }
         public static object ReturnFraction(int numerator, int denominator)
         {
-            Fraction example = new Fraction(numerator,denominator);
+            Fraction example = new Fraction(numerator, denominator);
             if (denominator > 0)
             {
                 return example;
@@ -42,17 +42,17 @@ namespace Lesson7_HomeWork_Structure
         {
             return $"{_numerator}/{_denominator}";
         }
-        public static void PrintFraction (object example)
+        public static void PrintFraction(object example)
         {
             Console.WriteLine(example.ToString());
         }
 
-        public object Addition (Fraction f2)
+        public object Addition(Fraction f2)
         {
-            Fraction f1 = new Fraction(_numerator,_denominator);
+            Fraction f1 = new Fraction(_numerator, _denominator);
             if (f1._denominator != f2._denominator)
             {
-                f1._numerator = f1._numerator*f2._denominator + f2._numerator*f2._denominator;
+                f1._numerator = f1._numerator * f2._denominator + f2._numerator * f2._denominator;
                 f1._denominator = f1._denominator * f2._denominator;
                 return f1;
             }
