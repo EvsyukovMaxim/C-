@@ -35,10 +35,19 @@ namespace Lesson7_HomeWork_Structure
                 randomFractions[i] = new Fraction(rnd.Next(0,10), rnd.Next(1, 10));
             }
 
+            Array.Sort(randomFractions);
+
             for (int i = 0; i < randomFractions.Length; i++)
             {
-                Console.WriteLine(randomFractions[i]);
+                Console.WriteLine("Отсортированный массив случайных дробей: " + randomFractions[i]);
             }
+
+            for (int i = 0; i < randomFractions.Length; i++)
+            {
+                sum = ((Fraction)sum).CompareTo((Fraction)randomFractions[i]);
+            }
+
+            Console.WriteLine("Сумма всех дробей равна: " + sum);
         }
     }
 }
