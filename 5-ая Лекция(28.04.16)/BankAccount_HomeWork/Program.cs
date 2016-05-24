@@ -32,6 +32,10 @@ namespace BankChet_HomeWork
             {
                 Console.WriteLine(ex.Message);
             }
+            finally
+            {
+                Console.WriteLine("Файнали");
+            }
             //mySberAccount.DepositAccount(100.10); //Возвращаем "ошибку"
             //mySberAccount.WithdrawMoneyFromAccount(100100); //Возвращаем "ошибку"
             //Console.WriteLine("\n");

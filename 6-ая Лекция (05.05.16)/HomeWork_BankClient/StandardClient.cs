@@ -8,9 +8,12 @@ namespace HomeWork_BankClient
 {
     class StandardClient : BankClient
     {
+        public StandardClient ()
+        {
+            _accountsQuantity = 3;
+        }
         public override void AddAccount(BaseAccount account)
         {
-            AccountsQuantity = 3;
             base.AddAccount(account);
         }
     }

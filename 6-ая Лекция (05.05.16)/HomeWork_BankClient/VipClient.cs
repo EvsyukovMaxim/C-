@@ -8,10 +8,12 @@ namespace HomeWork_BankClient
 {
     class VipClient : BankClient
     {
-        List<BaseAccount> accountsList = new List<BaseAccount>();
+        public VipClient()
+        {
+            _accountsQuantity = 10;
+        }
         public override void AddAccount(BaseAccount account)
         {
-            AccountsQuantity = 10;
             base.AddAccount(account);
         }
     }

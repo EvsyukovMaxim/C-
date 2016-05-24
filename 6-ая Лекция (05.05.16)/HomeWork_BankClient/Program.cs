@@ -34,38 +34,32 @@ namespace HomeWork_BankClient
 
             myStandardClient.PrintAccountNumber();
 
+            myStandardClient.CloseClientAccount("1111 1111 1111 1111");
 
-            myStandardClient2.AddAccount(myBaseAccount1);
-            myStandardClient2.AddAccount(mySavingAccount2);
-            myStandardClient2.AddAccount(myAccumulativeAccount3);
-            myStandardClient2.AddAccount(myMetallAccount4); //4-ый экземпляр для проверки ограничения списка Standard
-
-            myStandardClient2.PrintAccountNumber();
-
-            //myStandardClient.CloseClientAccount("1111 1111 1111 1111");
-
-            //myStandardClient.PrintAccountNumber();
+            myStandardClient.PrintAccountNumber();
 
 
-            //myVipClient.AddAccount(myBaseAccount1);
-            //myVipClient.AddAccount(mySavingAccount2);
-            //myVipClient.AddAccount(myAccumulativeAccount3);
-            //myVipClient.AddAccount(myMetallAccount4);
-            //myVipClient.AddAccount(myBaseAccount5);
-            //myVipClient.AddAccount(mySavingAccount6);
-            //myVipClient.AddAccount(myAccumulativeAccount7);
-            //myVipClient.AddAccount(myMetallAccount8);
-            //myVipClient.AddAccount(myBaseAccount9);
-            //myVipClient.AddAccount(mySavingAccount10);
-            //myVipClient.AddAccount(myAccumulativeAccount11); //11-ый экземпляр для проверки ограничения списка VIP
+            myVipClient.AddAccount(myBaseAccount1);
+            myVipClient.AddAccount(mySavingAccount2);
+            myVipClient.AddAccount(myAccumulativeAccount3);
+            myVipClient.AddAccount(myMetallAccount4);
+            myVipClient.AddAccount(myBaseAccount5);
+            myVipClient.AddAccount(mySavingAccount6);
+            myVipClient.AddAccount(myAccumulativeAccount7);
+            myVipClient.AddAccount(myMetallAccount8);
+            myVipClient.AddAccount(myBaseAccount9);
+            myVipClient.AddAccount(mySavingAccount10);
+            myVipClient.AddAccount(myAccumulativeAccount11); //11-ый экземпляр для проверки ограничения списка VIP
 
-            //myVipClient.PrintAccountNumber();
+            myVipClient.PrintAccountNumber();
 
-            //myVipClient.CloseClientAccount("5555 5555 5555 5555");
+            myVipClient.CloseClientAccount("5555 5555 5555 5555");
 
-            //myBank.Transaction(mySavingAccount2, myAccumulativeAccount3, 10000);
-            //myStandardClient.PrintAccountNumber();
-            //myVipClient.PrintAccountNumber();
+            myVipClient.PrintAccountNumber();
+
+            myBank.Transaction(mySavingAccount2, myAccumulativeAccount3, 10000);
+            myStandardClient.PrintAccountNumber();
+            myVipClient.PrintAccountNumber();
         }
     }
 }

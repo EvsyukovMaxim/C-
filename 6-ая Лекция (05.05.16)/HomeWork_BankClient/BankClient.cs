@@ -8,18 +8,23 @@ namespace HomeWork_BankClient
 {
     abstract class BankClient
     {
-        public int AccountsQuantity { get; protected set; }
+        protected int _accountsQuantity;
+        public BankClient ()
+        {
+            _accountsQuantity = 0;
+        }
+        
         List<BaseAccount> accountsList = new List<BaseAccount>();
         public virtual void AddAccount(BaseAccount account)
         {
             int listCount = accountsList.Count;
-            if (listCount < AccountsQuantity)
+            if (listCount < _accountsQuantity)
             {
                 accountsList.Add(account);
             }
             else
             {
-                Console.WriteLine("Доступное количество счетов, не более: " + AccountsQuantity);
+                Console.WriteLine("Доступное количество счетов, не более: " + _accountsQuantity);
             }
         }
 
