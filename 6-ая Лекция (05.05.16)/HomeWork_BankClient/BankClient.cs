@@ -32,7 +32,7 @@ namespace HomeWork_BankClient
         {
             for (int i = 0; i < accountsList.Count; i++)
             {
-                Console.WriteLine($"Сумма Обычного клиента: {accountsList[i].ReturnCurrentSum}, Номер счета: {accountsList[i].AccountNumber}, ФИО: {accountsList[i].ReturnFIO}, Активен: {accountsList[i].PrintIsActive}");
+                Console.WriteLine($"Сумма на счету: {accountsList[i].ReturnCurrentSum}, Номер счета: {accountsList[i].AccountNumber}, ФИО: {accountsList[i].ReturnFIO}, Активен: {accountsList[i].PrintIsActive}");
             }
         }
 
