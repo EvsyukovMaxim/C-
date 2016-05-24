@@ -44,7 +44,7 @@ namespace BankChet_HomeWork
             }
             else
             {
-                Console.WriteLine("Счет закрыт, вносить деньги нельзя");
+                throw new InvalidOperationException ("Счет закрыт, вносить деньги нельзя");
             }
         }
 

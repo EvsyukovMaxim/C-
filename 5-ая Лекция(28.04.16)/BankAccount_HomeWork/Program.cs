@@ -24,41 +24,49 @@ namespace BankChet_HomeWork
             Console.Write("Остаток после снятия со Сберегательного счета: ");
             mySberAccount.WithdrawMoneyFromAccount(101000);
             mySberAccount.CloseAccount();
-            mySberAccount.DepositAccount(100.10); //Возвращаем "ошибку"
-            mySberAccount.WithdrawMoneyFromAccount(100100); //Возвращаем "ошибку"
-            Console.WriteLine("\n");
+            try
+            {
+                mySberAccount.DepositAccount(100.10);
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            //mySberAccount.DepositAccount(100.10); //Возвращаем "ошибку"
+            //mySberAccount.WithdrawMoneyFromAccount(100100); //Возвращаем "ошибку"
+            //Console.WriteLine("\n");
 
 
-            //Накопительный счет
-            Console.Write("Остаток после внесения на Накопительный счет: ");
-            myAccumulativeAccount.DepositAccount(1000);
-            myAccumulativeAccount.Capitalization(10);
-            Console.Write("Остаток после снятия с Накопительного счета: ");
-            myAccumulativeAccount.WithdrawMoneyFromAccount(1091.67);
-            myAccumulativeAccount.WithdrawMoneyFromAccount(1);
-            Console.WriteLine("\n");
+            ////Накопительный счет
+            //Console.Write("Остаток после внесения на Накопительный счет: ");
+            //myAccumulativeAccount.DepositAccount(1000);
+            //myAccumulativeAccount.Capitalization(10);
+            //Console.Write("Остаток после снятия с Накопительного счета: ");
+            //myAccumulativeAccount.WithdrawMoneyFromAccount(1091.67);
+            //myAccumulativeAccount.WithdrawMoneyFromAccount(1);
+            //Console.WriteLine("\n");
 
 
-            //Расчетный счет
-            //myCheckingAccount.WithdrawMoneyFromAccount(100000);
-            //myCheckingAccount.CloseAccount();
-            Console.Write("Остаток после внесения на Расчетный счет: ");
-            myCheckingAccount.DepositAccount(1000);
-            Console.Write("Остаток после снятия с Расчетного счета: ");
-            myCheckingAccount.WithdrawMoneyFromAccount(100);
-            myCheckingAccount.Fee(10);
-            Console.WriteLine("\n");
+            ////Расчетный счет
+            ////myCheckingAccount.WithdrawMoneyFromAccount(100000);
+            ////myCheckingAccount.CloseAccount();
+            //Console.Write("Остаток после внесения на Расчетный счет: ");
+            //myCheckingAccount.DepositAccount(1000);
+            //Console.Write("Остаток после снятия с Расчетного счета: ");
+            //myCheckingAccount.WithdrawMoneyFromAccount(100);
+            //myCheckingAccount.Fee(10);
+            //Console.WriteLine("\n");
 
 
-            //Металлический счет
-            //myMetalicAccount.CloseAccount();
-            Console.WriteLine("Баланс в граммах на Металлическом счете: " + myMetalicAccount.ReturnMetallValue + " гр.");
-            Console.WriteLine("Баланс в рублях на Металлическом счете: " + myMetalicAccount.ReturnCurrentSum + " руб.");
-            Console.WriteLine("Внесено 1500 рублей, баланс в граммах на Металлическом счете: ");
-            myMetalicAccount.DepositAccount(1500);
-            Console.WriteLine("Снято 2750 рублей, баланс в граммах на Металлическом счете: ");
-            myMetalicAccount.WithdrawMoneyFromAccount(2750);
-            myMetalicAccount.WithdrawMoneyFromAccount(216422.65);
+            ////Металлический счет
+            ////myMetalicAccount.CloseAccount();
+            //Console.WriteLine("Баланс в граммах на Металлическом счете: " + myMetalicAccount.ReturnMetallValue + " гр.");
+            //Console.WriteLine("Баланс в рублях на Металлическом счете: " + myMetalicAccount.ReturnCurrentSum + " руб.");
+            //Console.WriteLine("Внесено 1500 рублей, баланс в граммах на Металлическом счете: ");
+            //myMetalicAccount.DepositAccount(1500);
+            //Console.WriteLine("Снято 2750 рублей, баланс в граммах на Металлическом счете: ");
+            //myMetalicAccount.WithdrawMoneyFromAccount(2750);
+            //myMetalicAccount.WithdrawMoneyFromAccount(216422.65);
         }
     }
 }
