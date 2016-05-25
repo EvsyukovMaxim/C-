@@ -28,13 +28,13 @@ namespace Lesson7_HomeWork_Structure
             }
             else if (denominator == 0)
             {
-                Console.WriteLine("Нельзя делить на ноль");
-                return new Fraction(0,0);
+                throw new DivideByZeroException("Нельзя делить на ноль");
+                //return new Fraction(0,0);
             }
             else
             {
-                Console.WriteLine("Знаменатель должен быть положительным ");
-                return new Fraction(0, 0);
+                throw new InvalidOperationException("Знаменатель должен быть положительным ");
+                //return new Fraction(0, 0);
             }
         }
 
@@ -100,8 +100,8 @@ namespace Lesson7_HomeWork_Structure
             }
             else
             {
-                Console.WriteLine("Знаменатель не может быть равен нулю после деления");
-                return f1;
+                throw new DivideByZeroException("Знаменатель не может быть равен нулю после деления");
+                //return f1;
             }
         }
 
