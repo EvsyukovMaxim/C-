@@ -18,10 +18,6 @@ namespace Lesson7_HomeWork_Structure
             {
                 _denominator = denominator;
             }
-            else
-            {
-                Console.WriteLine("Нельзя делить на ноль");
-            }
         }
         public static Fraction ReturnFraction(int numerator, int denominator)
         {
