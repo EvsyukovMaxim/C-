@@ -23,7 +23,7 @@ namespace Lesson7_HomeWork_Structure
                 Console.WriteLine("Нельзя делить на ноль");
             }
         }
-        public static object ReturnFraction(int numerator, int denominator)
+        public static Fraction ReturnFraction(int numerator, int denominator)
         {
             Fraction example = new Fraction(numerator, denominator);
             if (denominator > 0)
@@ -33,12 +33,12 @@ namespace Lesson7_HomeWork_Structure
             else if (denominator == 0)
             {
                 Console.WriteLine("Нельзя делить на ноль");
-                return 0;
+                return new Fraction(0,0);
             }
             else
             {
                 Console.WriteLine("Знаменатель должен быть положительным ");
-                return 0;
+                return new Fraction(0, 0);
             }
         }
 
@@ -51,7 +51,7 @@ namespace Lesson7_HomeWork_Structure
             Console.WriteLine(example.ToString());
         }
 
-        public object Addition(Fraction f2)
+        public Fraction Addition(Fraction f2)
         {
             Fraction f1 = new Fraction(_numerator, _denominator);
             if (f1._denominator != f2._denominator)
@@ -68,7 +68,7 @@ namespace Lesson7_HomeWork_Structure
             }
         }
 
-        public object Subtraction(Fraction f2)
+        public Fraction Subtraction(Fraction f2)
         {
             Fraction f1 = new Fraction(_numerator, _denominator);
             if (f1._denominator != f2._denominator)
@@ -85,7 +85,7 @@ namespace Lesson7_HomeWork_Structure
             }
         }
 
-        public object Multiplication(Fraction f2)
+        public Fraction Multiplication(Fraction f2)
         {
             Fraction f1 = new Fraction(_numerator, _denominator);
             f1._numerator = f1._numerator * f2._numerator;
@@ -93,7 +93,7 @@ namespace Lesson7_HomeWork_Structure
             return f1;
         }
 
-        public object Division(Fraction f2)
+        public Fraction Division(Fraction f2)
         {
             Fraction f1 = new Fraction(_numerator, _denominator);
             if (f2._numerator != 0)
