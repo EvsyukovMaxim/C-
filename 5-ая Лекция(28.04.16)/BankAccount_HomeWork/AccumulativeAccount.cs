@@ -24,7 +24,7 @@ namespace BankChet_HomeWork
             }
             else
             {
-                Console.WriteLine("Ошибка!!! Остаток на счете должен быть не меньше первоначального взноса");
+                throw new InvalidOperationException("Ошибка!!! Остаток на счете должен быть не меньше первоначального взноса");
             }
             
         }

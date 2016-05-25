@@ -39,7 +39,7 @@ namespace BankChet_HomeWork
             }
             else
             {
-                Console.WriteLine("Счет закрыт, вносить деньги нельзя");
+                throw new InvalidOperationException("Счет закрыт, вносить деньги нельзя");
             }
         }
 
@@ -54,12 +54,12 @@ namespace BankChet_HomeWork
                 }
                 else
                 {
-                    Console.WriteLine("Остаток на счете меньше снимаемой суммы");
+                    throw new InvalidOperationException("Остаток на счете меньше снимаемой суммы");
                 }
             }
             else
             {
-                Console.WriteLine("Счет закрыт, снимать деньги нельзя");
+                throw new InvalidProgramException("Счет закрыт, снимать деньги нельзя");
             }
         }
     }

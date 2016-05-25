@@ -59,13 +59,13 @@ namespace BankChet_HomeWork
                 }
                 else
                 {
-                    Console.WriteLine("Остаток на счете меньше снимаемой суммы");
+                    throw new InvalidOperationException ("Остаток на счете меньше снимаемой суммы");
                 }
 
             }
             else
             {
-                Console.WriteLine("Счет закрыт, снимать деньги нельзя");
+                throw new InvalidProgramException ("Счет закрыт, снимать деньги нельзя"); //постарался просто указать хоть какой-то отличный от InvalidOperationException тип исключения, чтобы было понятно, что в одном методе сработал именно этот исключепшн, а не какой-то другой
             }
         }
 
