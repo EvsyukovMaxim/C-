@@ -12,9 +12,5 @@ namespace HomeWork_BankClient
         {
             _accountsQuantity = 10;
         }
-        public override void AddAccount(BaseAccount account)
-        {
-            base.AddAccount(account);
-        }
     }
 }
