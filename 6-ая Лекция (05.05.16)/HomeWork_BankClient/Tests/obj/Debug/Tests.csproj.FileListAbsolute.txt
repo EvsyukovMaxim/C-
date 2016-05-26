@@ -1,0 +1,8 @@
+D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\Tests\bin\Debug\Tests.dll
+D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\Tests\bin\Debug\Tests.pdb
+D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\Tests\bin\Debug\HomeWork_BankClient.exe
+D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\Tests\bin\Debug\HomeWork_BankClient.pdb
+D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\Tests\obj\Debug\Tests.dll
+D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\Tests\obj\Debug\Tests.pdb
