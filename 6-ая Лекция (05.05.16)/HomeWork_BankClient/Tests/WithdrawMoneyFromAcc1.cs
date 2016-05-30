@@ -5,19 +5,19 @@ using HomeWork_BankClient;
 namespace Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class WithdrawMoneyFromAcc1
     {
         [TestMethod]
-        public void DepositAccountTest()
+        public void WithdrawMoneyFromAccount1()
         {
             //Arange
             BaseAccount example = new BaseAccount("");
 
             //Act
-            example.DepositAccount(100);
+            example.WithdrawMoneyFromAccount(1000);
 
             //Assert
-            Assert.AreEqual(100180, example.ReturnCurrentSum);
+            Assert.AreEqual(99000, example.ReturnCurrentSum);
         }
     }
 }

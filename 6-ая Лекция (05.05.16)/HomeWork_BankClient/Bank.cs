@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWork_BankClient
 {
-    class Bank
+    public class Bank
     {
         public void Transaction (BaseAccount from, BaseAccount to, int sum)
         {

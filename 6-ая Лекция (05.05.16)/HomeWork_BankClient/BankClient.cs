@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWork_BankClient
 {
-    abstract class BankClient
+    public abstract class BankClient
     {
         protected int _accountsQuantity;
         public BankClient ()
@@ -24,11 +24,11 @@ namespace HomeWork_BankClient
             }
             else
             {
-                Console.WriteLine("Доступное количество счетов, не более: " + _accountsQuantity);
+                throw new InvalidOperationException("Доступное количество счетов, не более: " + _accountsQuantity);
             }
         }
 
-        public void PrintAccountNumber()
+        public void PrintAccountData()
         {
             for (int i = 0; i < accountsList.Count; i++)
             {

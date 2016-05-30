@@ -11,7 +11,6 @@ namespace HomeWork_BankClient
         static void Main(string[] args)
         {
             StandardClient myStandardClient = new StandardClient();
-            StandardClient myStandardClient2 = new StandardClient();
             VipClient myVipClient = new VipClient();
             Bank myBank = new Bank();
 
@@ -30,13 +29,20 @@ namespace HomeWork_BankClient
             myStandardClient.AddAccount(myBaseAccount1);
             myStandardClient.AddAccount(mySavingAccount2);
             myStandardClient.AddAccount(myAccumulativeAccount3);
-            myStandardClient.AddAccount(myMetallAccount4); //4-ый экземпляр для проверки ограничения списка Standard
+            try
+            {
+                myStandardClient.AddAccount(myMetallAccount4); //4-ый экземпляр для проверки ограничения списка Standard
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
-            myStandardClient.PrintAccountNumber();
+            myStandardClient.PrintAccountData();
 
             myStandardClient.CloseClientAccount("1111 1111 1111 1111");
 
-            myStandardClient.PrintAccountNumber();
+            myStandardClient.PrintAccountData();
 
 
             myVipClient.AddAccount(myBaseAccount1);
@@ -49,17 +55,24 @@ namespace HomeWork_BankClient
             myVipClient.AddAccount(myMetallAccount8);
             myVipClient.AddAccount(myBaseAccount9);
             myVipClient.AddAccount(mySavingAccount10);
-            myVipClient.AddAccount(myAccumulativeAccount11); //11-ый экземпляр для проверки ограничения списка VIP
+            try
+            {
+                myVipClient.AddAccount(myAccumulativeAccount11); //11-ый экземпляр для проверки ограничения списка VIP
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
-            myVipClient.PrintAccountNumber();
+            myVipClient.PrintAccountData();
 
             myVipClient.CloseClientAccount("5555 5555 5555 5555");
 
-            myVipClient.PrintAccountNumber();
+            myVipClient.PrintAccountData();
 
             myBank.Transaction(mySavingAccount2, myAccumulativeAccount3, 10000);
-            myStandardClient.PrintAccountNumber();
-            myVipClient.PrintAccountNumber();
+            myStandardClient.PrintAccountData();
+            myVipClient.PrintAccountData();
         }
     }
 }

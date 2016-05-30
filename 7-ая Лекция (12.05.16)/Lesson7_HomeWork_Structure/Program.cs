@@ -17,11 +17,13 @@ namespace Lesson7_HomeWork_Structure
             {
                 Fraction f3 = Fraction.ReturnFraction(3, 0); //Если я возьму и использую метод с экземпляром f3 или f4, то компилятор заругается что таких объектов не существует. Как это обойти?
                 Fraction f4 = Fraction.ReturnFraction(1, 0);
+                f3.Addition(f4);
             }
             catch (DivideByZeroException ex)
             {
                 Console.WriteLine(ex.Message);
             }
+
 
             Fraction.PrintFraction(f1);
             Fraction.PrintFraction(f2);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWork_BankClient
 {
-    class VipClient : BankClient
+    public class VipClient : BankClient
     {
         public VipClient()
         {

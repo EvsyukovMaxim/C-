@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWork_BankClient
 {
-    class StandardClient : BankClient
+    public class StandardClient : BankClient
     {
         public StandardClient ()
         {
