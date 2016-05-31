@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using HomeWork_BankClient;
+using HomeWork_BankClient;MetallAccount
 
 namespace Tests
 {
@@ -11,8 +11,8 @@ namespace Tests
         public void Transaction2()
         {
             //Arange
-            BaseAccount example1 = new BaseAccount("1111 2222 3333 4444");
-            BaseAccount example2 = new BaseAccount("2222 2222 3333 4444");
+            MetallAccount example1 = new MetallAccount("1111 2222 3333 4444");
+            SavingAccount example2 = new SavingAccount("2222 2222 3333 4444");
             Bank myBank = new Bank();
 
             //Act

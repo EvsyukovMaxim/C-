@@ -11,7 +11,7 @@ namespace Tests
         public void DepositAccountTest1()
         {
             //Arange
-            BaseAccount example = new BaseAccount("");
+            MetallAccount example = new MetallAccount("");
 
             //Act
             example.DepositAccount(100);

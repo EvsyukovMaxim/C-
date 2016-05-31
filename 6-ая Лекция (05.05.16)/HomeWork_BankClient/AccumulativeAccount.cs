@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWork_BankClient
 {
-    class AccumulativeAccount : BaseAccount
+    public class AccumulativeAccount : BaseAccount
     {
         public AccumulativeAccount(string accountNumber) : base (accountNumber)
         {

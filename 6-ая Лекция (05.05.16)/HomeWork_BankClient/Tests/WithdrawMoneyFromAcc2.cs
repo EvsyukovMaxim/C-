@@ -11,7 +11,7 @@ namespace Tests
         public void WithdrawMoneyFromAccount2()
         {
             //Arange
-            BaseAccount example = new BaseAccount("");
+            AccumulativeAccount example = new AccumulativeAccount("");
 
             //Act
             example.WithdrawMoneyFromAccount(1000);

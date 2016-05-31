@@ -11,7 +11,7 @@ namespace Tests
         public void ReturnActive1()
         {
             //Arange
-            BaseAccount example = new BaseAccount("");
+            SavingAccount example = new SavingAccount("");
 
             //Act
             example.CloseAccount();

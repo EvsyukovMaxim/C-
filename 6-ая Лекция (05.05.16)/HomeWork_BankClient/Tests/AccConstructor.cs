@@ -5,13 +5,13 @@ using HomeWork_BankClient;
 namespace Tests
 {
     [TestClass]
-    public class BaseAccConstructor
+    public class AccConstructor
     {
         [TestMethod]
-        public void BaseAccountConstructor()
+        public void AccountConstructor()
         {
             //Arange
-            BaseAccount example = new BaseAccount("123456789");
+            MetallAccount example = new MetallAccount("123456789");
 
             //Act
             

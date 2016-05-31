@@ -12,10 +12,10 @@ namespace Tests
         public void AddAccount1()
         {
             //Arange
-            BaseAccount example1 = new BaseAccount("1111 2222 3333 4444");
-            BaseAccount example2 = new BaseAccount("2222 2222 3333 4444");
-            BaseAccount example3 = new BaseAccount("3333 2222 3333 4444");
-            BaseAccount example4 = new BaseAccount("4444 2222 3333 4444");
+            MetallAccount example1 = new MetallAccount("1111 2222 3333 4444");
+            SavingAccount example2 = new SavingAccount("2222 2222 3333 4444");
+            AccumulativeAccount example3 = new AccumulativeAccount("3333 2222 3333 4444");
+            MetallAccount example4 = new MetallAccount("4444 2222 3333 4444");
             StandardClient standartExample = new StandardClient();
 
             //Act

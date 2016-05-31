@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWork_BankClient
 {
-    public class BaseAccount
+    public abstract class BaseAccount
     {
         //protected string _accountNumber;
         readonly string _ownerName;

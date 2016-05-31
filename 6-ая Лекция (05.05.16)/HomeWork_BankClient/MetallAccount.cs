@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWork_BankClient
 {
-    class MetallAccount : BaseAccount
+    public class MetallAccount : BaseAccount
     {
         public MetallAccount(string accountNumber) : base (accountNumber)
         {

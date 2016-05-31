@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace HomeWork_BankClient
 {
     //Сберегательный счет
-    class SavingAccount : BaseAccount
+    public class SavingAccount : BaseAccount
     {
         public SavingAccount (string accountNumber) : base (accountNumber)
         {

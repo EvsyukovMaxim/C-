@@ -12,17 +12,17 @@ namespace Tests
         public void AddAccount2()
         {
             //Arange
-            BaseAccount example1 = new BaseAccount("1111 2222 3333 4444");
-            BaseAccount example2 = new BaseAccount("2222 2222 3333 4444");
-            BaseAccount example3 = new BaseAccount("3333 2222 3333 4444");
-            BaseAccount example4 = new BaseAccount("4444 2222 3333 4444");
-            BaseAccount example5 = new BaseAccount("5555 2222 3333 4444");
-            BaseAccount example6 = new BaseAccount("6666 2222 3333 4444");
-            BaseAccount example7 = new BaseAccount("7777 2222 3333 4444");
-            BaseAccount example8 = new BaseAccount("8888 2222 3333 4444");
-            BaseAccount example9 = new BaseAccount("9999 2222 3333 4444");
-            BaseAccount example10 = new BaseAccount("0000 2222 3333 4444");
-            BaseAccount example11 = new BaseAccount("1010 2222 3333 4444");
+            MetallAccount example1 = new MetallAccount("1111 2222 3333 4444");
+            SavingAccount example2 = new SavingAccount("2222 2222 3333 4444");
+            AccumulativeAccount example3 = new AccumulativeAccount("3333 2222 3333 4444");
+            MetallAccount example4 = new MetallAccount("4444 2222 3333 4444");
+            SavingAccount example5 = new SavingAccount("5555 2222 3333 4444");
+            AccumulativeAccount example6 = new AccumulativeAccount("6666 2222 3333 4444");
+            MetallAccount example7 = new MetallAccount("7777 2222 3333 4444");
+            SavingAccount example8 = new SavingAccount("8888 2222 3333 4444");
+            AccumulativeAccount example9 = new AccumulativeAccount("9999 2222 3333 4444");
+            MetallAccount example10 = new MetallAccount("0000 2222 3333 4444");
+            SavingAccount example11 = new SavingAccount("1010 2222 3333 4444");
             VipClient vipExample = new VipClient();
 
             //Act

@@ -11,8 +11,8 @@ namespace Tests
         public void Transaction1()
         {
             //Arange
-            BaseAccount example1 = new BaseAccount("1111 2222 3333 4444");
-            BaseAccount example2 = new BaseAccount("2222 2222 3333 4444");
+            AccumulativeAccount example1 = new AccumulativeAccount("1111 2222 3333 4444");
+            MetallAccount example2 = new MetallAccount("2222 2222 3333 4444");
             Bank myBank = new Bank();
 
             //Act

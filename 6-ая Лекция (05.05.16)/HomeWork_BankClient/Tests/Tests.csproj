@@ -62,7 +62,7 @@
     <Compile Include="DepositAccTest2.cs" />
     <Compile Include="DepositAccTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BaseAccConstructor.cs" />
+    <Compile Include="AccConstructor.cs" />
     <Compile Include="CloseAcc1.cs" />
     <Compile Include="ReturnIsActive2.cs" />
     <Compile Include="ReturnIsActive1.cs" />

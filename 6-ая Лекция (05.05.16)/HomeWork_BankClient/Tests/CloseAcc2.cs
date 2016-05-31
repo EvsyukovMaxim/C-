@@ -11,7 +11,7 @@ namespace Tests
         public void CloseAccount2()
         {
             //Arange
-            BaseAccount example = new BaseAccount("1111 2222 3333 4444");
+            SavingAccount example = new SavingAccount("1111 2222 3333 4444");
             StandardClient standartExample = new StandardClient();
 
             //Act

@@ -11,7 +11,7 @@ namespace Tests
         public void DepositAccountTest3()
         {
             //Arange
-            BaseAccount example = new BaseAccount("");
+            AccumulativeAccount example = new AccumulativeAccount("");
 
             //Act
             example.DepositAccount(-1000);
