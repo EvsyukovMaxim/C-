@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using HomeWork_BankClient;MetallAccount
+using HomeWork_BankClient;
 
 namespace Tests
 {
