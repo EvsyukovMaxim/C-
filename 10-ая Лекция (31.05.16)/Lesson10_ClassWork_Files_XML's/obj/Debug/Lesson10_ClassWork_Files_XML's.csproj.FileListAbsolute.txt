@@ -1,0 +1,6 @@
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_ClassWork_Files_XML's\bin\Debug\Lesson10_ClassWork_Files_XML's.exe.config
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_ClassWork_Files_XML's\bin\Debug\Lesson10_ClassWork_Files_XML's.exe
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_ClassWork_Files_XML's\bin\Debug\Lesson10_ClassWork_Files_XML's.pdb
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_ClassWork_Files_XML's\obj\Debug\Lesson10_ClassWork_Files_XML's.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_ClassWork_Files_XML's\obj\Debug\Lesson10_ClassWork_Files_XML's.exe
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_ClassWork_Files_XML's\obj\Debug\Lesson10_ClassWork_Files_XML's.pdb
