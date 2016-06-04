@@ -1,0 +1,8 @@
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\Tests_Fraction\bin\Debug\Tests_Fraction.dll
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\Tests_Fraction\bin\Debug\Tests_Fraction.pdb
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\Tests_Fraction\bin\Debug\Lesson7_HomeWork_Structure.exe
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\Tests_Fraction\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\Tests_Fraction\bin\Debug\Lesson7_HomeWork_Structure.pdb
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\Tests_Fraction\obj\Debug\Tests_Fraction.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\Tests_Fraction\obj\Debug\Tests_Fraction.dll
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\Tests_Fraction\obj\Debug\Tests_Fraction.pdb
