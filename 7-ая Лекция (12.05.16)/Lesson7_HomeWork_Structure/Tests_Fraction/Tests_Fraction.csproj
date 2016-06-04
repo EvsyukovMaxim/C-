@@ -45,15 +45,20 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="SubFrac.cs" />
+    <Compile Include="MultiFrac.cs" />
     <Compile Include="CompFrac.cs" />
     <Compile Include="FracConstruct.cs" />
     <Compile Include="AddFrac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DivFrac.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lesson7_HomeWork_Structure.csproj">

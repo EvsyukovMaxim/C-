@@ -19,6 +19,7 @@ namespace Tests_Fraction
             //Assert
             Assert.AreEqual("1/2", f1.ToString());
             Assert.AreEqual("3/5", f2.ToString());
+            Assert.AreEqual(f1,Fraction.ReturnFraction(1,2));
         }
     }
 }
