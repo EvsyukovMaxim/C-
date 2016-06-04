@@ -5,11 +5,11 @@ using HomeWork_BankClient;
 namespace Tests
 {
     [TestClass]
-    public class DepositAccTest1
+    public class DepositAccTest
     {
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
-        public void DepositAccountTest1()
+        public void DepositAccountTest()
         {
             //Arange
             MetallAccount exampleMet = new MetallAccount("");
