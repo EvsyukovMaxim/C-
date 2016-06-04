@@ -12,8 +12,8 @@ namespace Lesson7_HomeWork_Structure
         {
             try
             {
-                Fraction f1 = Fraction.ReturnFraction(3, 0);
-                Fraction f2 = Fraction.ReturnFraction(1, 0);
+                Fraction f1 = Fraction.ReturnFraction(3, 5);
+                Fraction f2 = Fraction.ReturnFraction(1, 3);
                 Fraction.PrintFraction(f1);
                 Fraction.PrintFraction(f2);
 

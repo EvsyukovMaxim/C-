@@ -1,0 +1,8 @@
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\UnitTestProject1\bin\Debug\Lesson7_HomeWork_Structure.exe
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\UnitTestProject1\bin\Debug\Lesson7_HomeWork_Structure.pdb
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
