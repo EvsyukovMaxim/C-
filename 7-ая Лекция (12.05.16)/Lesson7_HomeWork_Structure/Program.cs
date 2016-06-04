@@ -10,38 +10,23 @@ namespace Lesson7_HomeWork_Structure
     {
         static void Main(string[] args)
         {
-            Fraction f1 = Fraction.ReturnFraction(1, 0);
-            Fraction f2 = Fraction.ReturnFraction(1, 0);
-
             try
             {
-                Fraction f3 = Fraction.ReturnFraction(3, 0); //Если я возьму и использую метод с экземпляром f3 или f4, то компилятор заругается что таких объектов не существует. Как это обойти?
-                Fraction f4 = Fraction.ReturnFraction(1, 0);
-                f3.Addition(f4);
-            }
-            catch (DivideByZeroException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+                Fraction f1 = Fraction.ReturnFraction(3, 0);
+                Fraction f2 = Fraction.ReturnFraction(1, 0);
+                Fraction.PrintFraction(f1);
+                Fraction.PrintFraction(f2);
 
-
-            Fraction.PrintFraction(f1);
-            Fraction.PrintFraction(f2);
-
-            Console.WriteLine(f1.Addition(f2));
-            Console.WriteLine(f1.Subtraction(f2));
-            Console.WriteLine(f1.Multiplication(f2));
-            try
-            {
+                Console.WriteLine(f1.Addition(f2));
+                Console.WriteLine(f1.Subtraction(f2));
+                Console.WriteLine(f1.Multiplication(f2));
                 Console.WriteLine(f1.Division(f2));
+                Console.WriteLine(((Fraction)f1).CompareTo((Fraction)f2));
             }
             catch (DivideByZeroException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-
-            Console.WriteLine(((Fraction)f1).CompareTo((Fraction)f2));
-
 
             Console.WriteLine("Необходимо ввести количество дробей, которые попадут в массив: ");
             int n = Convert.ToInt32(Console.ReadLine());

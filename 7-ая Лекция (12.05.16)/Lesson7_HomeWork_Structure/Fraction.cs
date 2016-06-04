@@ -22,7 +22,7 @@ namespace Lesson7_HomeWork_Structure
         public static Fraction ReturnFraction(int numerator, int denominator)
         {
             Fraction example = new Fraction(numerator, denominator);
-            if (denominator > 0)
+            if (denominator > 0)    
             {
                 return example;
             }
