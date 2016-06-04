@@ -50,7 +50,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AddFraction.cs" />
+    <Compile Include="CompFrac.cs" />
+    <Compile Include="FracConstruct.cs" />
+    <Compile Include="AddFrac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -29,12 +29,12 @@ namespace Lesson7_HomeWork_Structure
             else if (denominator == 0)
             {
                 throw new DivideByZeroException("Нельзя делить на ноль");
-                //return new Fraction(0,0);
             }
             else
             {
-                throw new InvalidOperationException("Знаменатель должен быть положительным ");
-                //return new Fraction(0, 0);
+                numerator = numerator * -1;
+                denominator = denominator * -1;
+                return example;
             }
         }
 
