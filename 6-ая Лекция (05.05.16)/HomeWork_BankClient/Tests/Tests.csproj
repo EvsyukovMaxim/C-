@@ -52,14 +52,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AddAccBase.cs" />
+    <Compile Include="BankClientChild.cs" />
+    <Compile Include="BaseAccChild.cs" />
     <Compile Include="Transact3.cs" />
     <Compile Include="Transact2.cs" />
     <Compile Include="Transact1.cs" />
-    <Compile Include="AddAcc2.cs" />
-    <Compile Include="AddAcc1.cs" />
+    <Compile Include="AddAccVipClient.cs" />
+    <Compile Include="AddAccStandClient.cs" />
     <Compile Include="CloseAcc2.cs" />
-    <Compile Include="DepositAccTest3.cs" />
-    <Compile Include="DepositAccTest2.cs" />
     <Compile Include="DepositAccTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AccConstructor.cs" />

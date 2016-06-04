@@ -35,14 +35,42 @@ namespace HomeWork_BankClient
 
         public int DepositAccount(int plus)
         {
-            _currentSum = _currentSum + plus;
-            return _currentSum;
+            if (_currentSum >= 0)
+            {
+                if (plus >= 0)
+                {
+                    _currentSum = _currentSum + plus;
+                    return _currentSum;
+                }
+                else
+                {
+                    throw new InvalidOperationException("Нельзя положить на счет отрицательную сумму");
+                }
+            }
+            else
+            {
+                throw new InvalidOperationException("Сумма на счету меньше нуля");
+            }
         }
 
         public int WithdrawMoneyFromAccount(int minus)
         {
-            _currentSum = _currentSum - minus;
-            return _currentSum;
+            if (_currentSum >= 0)
+            {
+                if (minus >= 0)
+                {
+                    _currentSum = _currentSum - minus;
+                    return _currentSum;
+                }
+                else
+                {
+                    throw new InvalidOperationException("Нельзя списывать со счета отрицательную сумму");
+                }
+            }
+            else
+            {
+                throw new InvalidOperationException("Сумма на счету меньше нуля");
+            }
         }
     }
 }

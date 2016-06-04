@@ -8,6 +8,7 @@ namespace Tests
     public class Transact3
     {
         [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
         public void Transaction3()
         {
             //Arange

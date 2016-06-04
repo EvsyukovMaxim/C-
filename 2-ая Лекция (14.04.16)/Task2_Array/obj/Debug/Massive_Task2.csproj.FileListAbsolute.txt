@@ -13,3 +13,9 @@ D:\Repository_GitHub\CS\14.04.16\Massive_Task2\obj\Debug\Massive_Task2.csprojRes
 D:\Repository_GitHub\CS\14.04.16\Task2_Array\bin\Debug\Massive_Task2.exe.config
 D:\Repository_GitHub\CS\14.04.16\Task2_Array\obj\Debug\Massive_Task2.exe
 D:\Repository_GitHub\CS\14.04.16\Task2_Array\obj\Debug\Massive_Task2.pdb
+D:\Repository_GitHub\CS\2-ая Лекция (14.04.16)\Task2_Array\bin\Debug\Massive_Task2.exe.config
+D:\Repository_GitHub\CS\2-ая Лекция (14.04.16)\Task2_Array\obj\Debug\Massive_Task2.exe
+D:\Repository_GitHub\CS\2-ая Лекция (14.04.16)\Task2_Array\obj\Debug\Massive_Task2.pdb
+D:\Repository_GitHub\CS\2-ая Лекция (14.04.16)\Task2_Array\bin\Debug\Massive_Task2.exe
+D:\Repository_GitHub\CS\2-ая Лекция (14.04.16)\Task2_Array\bin\Debug\Massive_Task2.pdb
+D:\Repository_GitHub\CS\2-ая Лекция (14.04.16)\Task2_Array\obj\Debug\Massive_Task2.csprojResolveAssemblyReference.cache

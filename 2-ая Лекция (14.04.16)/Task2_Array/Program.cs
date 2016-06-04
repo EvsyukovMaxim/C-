@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace For_Task1
+namespace Massive_Task2
 {
     class Program
     {
@@ -20,10 +20,12 @@ namespace For_Task1
 
             Array.Sort(numbers);
 
-            for (int i = 0; i < n; i++)
-            {
-                Console.Write(numbers[i] + " ");
-            }
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.Write(numbers[i] + " ");
+            //}
+
+            numbers.PrintArray();
         }
     }
 }
