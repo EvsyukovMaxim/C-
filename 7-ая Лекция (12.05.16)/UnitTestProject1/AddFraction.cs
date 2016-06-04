@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Lesson7_HomeWork_Structure;
 
-namespace UnitTestProject1
+namespace Tests_Fraction
 {
     [TestClass]
     public class AddFraction

@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson7_HomeWork_Structure", "Lesson7_HomeWork_Structure.csproj", "{EE12B188-D31E-48C0-9EA9-14EE7B7C73DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "..\UnitTestProject1\UnitTestProject1.csproj", "{245C295B-C1AB-4F47-89A0-9E23FF9A1E6F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests_Fraction", "..\UnitTestProject1\Tests_Fraction.csproj", "{245C295B-C1AB-4F47-89A0-9E23FF9A1E6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
