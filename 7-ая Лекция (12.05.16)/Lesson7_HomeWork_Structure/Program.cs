@@ -27,6 +27,10 @@ namespace Lesson7_HomeWork_Structure
             {
                 Console.WriteLine(ex.Message);
             }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
             Console.WriteLine("Необходимо ввести количество дробей, которые попадут в массив: ");
             int n = Convert.ToInt32(Console.ReadLine());

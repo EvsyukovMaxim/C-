@@ -32,9 +32,7 @@ namespace Lesson7_HomeWork_Structure
             }
             else
             {
-                numerator = numerator * -1;
-                denominator = denominator * -1;
-                return example;
+                throw new InvalidOperationException("знаменатель не может быть отрицательным");
             }
         }
 
