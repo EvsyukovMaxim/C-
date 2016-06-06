@@ -8,27 +8,36 @@ namespace Tests_Fraction
     public class MultiFrac
     {
         [TestMethod]
-        public void MultiplicationFraction()
+        public void MultiplicationFraction1()
         {
             //Arrange
             Fraction f1 = new Fraction(1, 2);
             Fraction f2 = new Fraction(1, 2);
-            Fraction f3 = new Fraction(1, 0);
-            Fraction f4 = new Fraction(0, -1);
 
             //Act
             Fraction fn1 = f1.Multiplication(f2);
 
             //Assert
             Assert.AreEqual("1/4", fn1.ToString());
-
+        }
+        public void MultiplicationFraction2()
+        {
+            //Arrange
+            Fraction f1 = new Fraction(1, 2);
+            Fraction f3 = new Fraction(1, 0);
 
             //Act
             Fraction fn2 = f1.Multiplication(f3);
 
             //Assert
             Assert.AreEqual("1/0", fn2.ToString());
+        }
 
+        public void MultiplicationFraction3()
+        {
+            //Arrange
+            Fraction f3 = new Fraction(1, 0);
+            Fraction f4 = new Fraction(0, -1);
 
             //Act
             Fraction fn3 = f3.Multiplication(f4);
@@ -36,7 +45,7 @@ namespace Tests_Fraction
             //Assert
             Assert.AreEqual("0/0", fn3.ToString());
 
-            // Не работает эксепшн на инициализацию дробей с нулевым знаменателем (((
+            // Не работает эксепшн на инициализацию дробей с нулевым знаменателем ((( не понимаю почему, хотя в Program.cs срабатывает
         }
     }
 }
