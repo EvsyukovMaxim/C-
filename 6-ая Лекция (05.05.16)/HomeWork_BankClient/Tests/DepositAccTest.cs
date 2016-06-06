@@ -8,7 +8,7 @@ namespace Tests
     public class DepositAccTest
     {
         [TestMethod]
-        public void DepositAccountTest1()
+        public void DepositAccountTest1_0()
         {
             //Arange
             MetallAccount exampleMet = new MetallAccount("");
@@ -19,7 +19,31 @@ namespace Tests
 
             //Assert
             Assert.AreEqual(100100, exampleMet.ReturnCurrentSum);
+        }
+
+        public void DepositAccountTest1_1()
+        {
+            //Arange
+            MetallAccount exampleMet = new MetallAccount("");
+            SavingAccount exampleSav = new SavingAccount("");
+
+            //Act
+            exampleMet.DepositAccount(100);
+
+            //Assert
             Assert.AreNotEqual(100000, exampleMet.ReturnCurrentSum);
+        }
+
+        public void DepositAccountTest1_2()
+        {
+            //Arange
+            MetallAccount exampleMet = new MetallAccount("");
+            SavingAccount exampleSav = new SavingAccount("");
+
+            //Act
+            exampleMet.DepositAccount(100);
+
+            //Assert
             Assert.AreNotEqual(99000, exampleSav.ReturnCurrentSum);
         }
 
