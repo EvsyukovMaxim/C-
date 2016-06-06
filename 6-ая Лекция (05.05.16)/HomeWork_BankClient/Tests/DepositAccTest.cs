@@ -8,8 +8,7 @@ namespace Tests
     public class DepositAccTest
     {
         [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
-        public void DepositAccountTest()
+        public void DepositAccountTest1()
         {
             //Arange
             MetallAccount exampleMet = new MetallAccount("");
@@ -17,11 +16,37 @@ namespace Tests
 
             //Act
             exampleMet.DepositAccount(100);
-            exampleSav.DepositAccount(-1000);
 
             //Assert
             Assert.AreEqual(100100, exampleMet.ReturnCurrentSum);
             Assert.AreNotEqual(100000, exampleMet.ReturnCurrentSum);
+            Assert.AreNotEqual(99000, exampleSav.ReturnCurrentSum);
+        }
+
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void DepositAccountTest2()
+        {
+            //Arange
+            MetallAccount exampleMet = new MetallAccount("");
+            SavingAccount exampleSav = new SavingAccount("");
+
+            //Act
+            exampleSav.DepositAccount(-1000);
+
+            //Assert
+            Assert.AreNotEqual(100000, exampleMet.ReturnCurrentSum);
+        }
+
+        public void DepositAccountTest3()
+        {
+            //Arange
+            MetallAccount exampleMet = new MetallAccount("");
+            SavingAccount exampleSav = new SavingAccount("");
+
+            //Act
+            exampleSav.DepositAccount(-1000);
+
+            //Assert
             Assert.AreNotEqual(99000, exampleSav.ReturnCurrentSum);
         }
     }

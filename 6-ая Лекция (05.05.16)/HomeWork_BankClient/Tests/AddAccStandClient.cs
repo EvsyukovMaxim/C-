@@ -18,12 +18,12 @@ namespace Tests
             MetallAccount example4 = new MetallAccount("4444 2222 3333 4444");
             StandardClient standartExample = new StandardClient();
 
+
             //Act
             standartExample.AddAccount(example1);
             standartExample.AddAccount(example2);
             standartExample.AddAccount(example3);
             standartExample.AddAccount(example4);
-
 
             //Assert
 

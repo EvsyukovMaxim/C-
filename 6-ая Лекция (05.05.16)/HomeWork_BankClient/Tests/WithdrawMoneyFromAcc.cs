@@ -8,8 +8,7 @@ namespace Tests
     public class WithdrawMoneyFromAcc
     {
         [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
-        public void WithdrawMoneyFromAccount()
+        public void WithdrawMoneyFromAccount1()
         {
             //Arange
             MetallAccount example = new MetallAccount("");
@@ -19,14 +18,25 @@ namespace Tests
 
             //Assert
             Assert.AreEqual(99000, example.ReturnCurrentSum);
+        }
 
+        public void WithdrawMoneyFromAccount2()
+        {
+            //Arange
+            MetallAccount example = new MetallAccount("");
 
             //Act
             example.WithdrawMoneyFromAccount(1000);
 
             //Assert
             Assert.AreNotEqual(101000, example.ReturnCurrentSum);
+        }
 
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void WithdrawMoneyFromAccount3()
+        {
+            //Arange
+            MetallAccount example = new MetallAccount("");
 
             //Act
             example.WithdrawMoneyFromAccount(-1000);
