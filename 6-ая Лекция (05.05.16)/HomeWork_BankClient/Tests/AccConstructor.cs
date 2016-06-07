@@ -20,6 +20,7 @@ namespace Tests
             Assert.AreEqual("123456789", example.AccountNumber);
         }
 
+        [TestMethod]
         public void AccountConstructor2()
         {
             //Arange
@@ -32,6 +33,7 @@ namespace Tests
             Assert.AreEqual("Евсюков М.В.", example.ReturnFIO);
         }
 
+        [TestMethod]
         public void AccountConstructor3()
         {
             //Arange
@@ -44,6 +46,7 @@ namespace Tests
             Assert.AreEqual(100000, example.ReturnCurrentSum);
         }
 
+        [TestMethod]
         public void AccountConstructor4()
         {
             //Arange

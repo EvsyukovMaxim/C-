@@ -22,6 +22,7 @@ namespace Tests
             Assert.AreEqual(200000, exampleMet.ReturnCurrentSum);
         }
 
+        [TestMethod]
         public void Transaction2()
         {
             //Arange
@@ -37,6 +38,7 @@ namespace Tests
             Assert.AreNotEqual(200000, exampleMet.ReturnCurrentSum);
         }
 
+        [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void Transaction3()
         {

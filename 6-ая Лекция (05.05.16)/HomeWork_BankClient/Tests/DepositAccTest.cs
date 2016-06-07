@@ -21,6 +21,7 @@ namespace Tests
             Assert.AreEqual(100100, exampleMet.ReturnCurrentSum);
         }
 
+        [TestMethod]
         public void DepositAccountTest1_1()
         {
             //Arange
@@ -34,6 +35,7 @@ namespace Tests
             Assert.AreNotEqual(100000, exampleMet.ReturnCurrentSum);
         }
 
+        [TestMethod]
         public void DepositAccountTest1_2()
         {
             //Arange
@@ -47,6 +49,7 @@ namespace Tests
             Assert.AreNotEqual(99000, exampleSav.ReturnCurrentSum);
         }
 
+        [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void DepositAccountTest2()
         {
@@ -61,6 +64,8 @@ namespace Tests
             Assert.AreNotEqual(100000, exampleMet.ReturnCurrentSum);
         }
 
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
         public void DepositAccountTest3()
         {
             //Arange

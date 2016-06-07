@@ -20,6 +20,7 @@ namespace Tests
             Assert.AreEqual(false, example1.PrintIsActive);
         }
 
+        [TestMethod]
         public void ReturnActive2()
         {
             //Arange

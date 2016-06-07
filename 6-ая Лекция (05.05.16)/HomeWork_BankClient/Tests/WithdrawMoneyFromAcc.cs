@@ -20,6 +20,7 @@ namespace Tests
             Assert.AreEqual(99000, example.ReturnCurrentSum);
         }
 
+        [TestMethod]
         public void WithdrawMoneyFromAccount2()
         {
             //Arange
@@ -32,6 +33,7 @@ namespace Tests
             Assert.AreNotEqual(101000, example.ReturnCurrentSum);
         }
 
+        [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void WithdrawMoneyFromAccount3()
         {
