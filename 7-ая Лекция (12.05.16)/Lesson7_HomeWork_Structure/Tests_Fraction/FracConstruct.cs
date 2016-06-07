@@ -19,6 +19,7 @@ namespace Tests_Fraction
             Assert.AreEqual("1/2", f1.ToString());
         }
 
+        [TestMethod]
         public void FractionConstructor2()
         {
             //Arrange
@@ -30,6 +31,7 @@ namespace Tests_Fraction
             Assert.AreEqual("3/5", f2.ToString());
         }
 
+        [TestMethod]
         public void FractionConstructor3()
         {
             //Arrange

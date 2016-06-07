@@ -21,6 +21,7 @@ namespace Tests_Fraction
             Assert.AreEqual("0/2", fn1.ToString());
         }
 
+        [TestMethod]
         public void SubtractionFraction2()
         {
             //Arrange
@@ -35,6 +36,7 @@ namespace Tests_Fraction
             Assert.AreEqual("0/0", fn2.ToString());
         }
 
+        [TestMethod]
         public void SubtractionFraction3()
         {
             //Arrange

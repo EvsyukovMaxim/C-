@@ -21,7 +21,7 @@ namespace Tests_Fraction
             Assert.AreEqual("2/2", fn1.ToString());
         }
 
-        [ExpectedException(typeof(DivideByZeroException))]
+        [TestMethod]
         public void DivisionFraction2()
         {
             //Arrange
@@ -35,6 +35,8 @@ namespace Tests_Fraction
             Assert.AreEqual("0/2", fn2.ToString());
         }
 
+        [TestMethod]
+        [ExpectedException(typeof(DivideByZeroException))]
         public void DivisionFraction3()
         {
             //Arrange

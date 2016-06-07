@@ -22,6 +22,7 @@ namespace Tests_Fraction
 
         }
 
+        [TestMethod]
         public void CompareFraction2()
         {
             //Arrange
@@ -33,6 +34,8 @@ namespace Tests_Fraction
             //Assert
             Assert.AreEqual(1, ((Fraction)f3).CompareTo((Fraction)f2));
         }
+
+        [TestMethod]
         public void CompareFraction3()
         {
             //Arrange
