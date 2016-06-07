@@ -1,0 +1,5 @@
+D:\Repository_GitHub\CS\12-ая Лекция (07.06.16)\LINQ\bin\Debug\LINQ.exe.config
+D:\Repository_GitHub\CS\12-ая Лекция (07.06.16)\LINQ\bin\Debug\LINQ.exe
+D:\Repository_GitHub\CS\12-ая Лекция (07.06.16)\LINQ\bin\Debug\LINQ.pdb
+D:\Repository_GitHub\CS\12-ая Лекция (07.06.16)\LINQ\obj\Debug\LINQ.exe
+D:\Repository_GitHub\CS\12-ая Лекция (07.06.16)\LINQ\obj\Debug\LINQ.pdb
