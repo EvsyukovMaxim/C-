@@ -1,0 +1,6 @@
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_HomeWork_flowCards\flowCards\bin\Debug\flowCards.exe.config
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_HomeWork_flowCards\flowCards\bin\Debug\flowCards.exe
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_HomeWork_flowCards\flowCards\bin\Debug\flowCards.pdb
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_HomeWork_flowCards\flowCards\obj\Debug\flowCards.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_HomeWork_flowCards\flowCards\obj\Debug\flowCards.exe
+D:\Repository_GitHub\CS\10-ая Лекция (31.05.16)\Lesson10_HomeWork_flowCards\flowCards\obj\Debug\flowCards.pdb
