@@ -18,7 +18,6 @@ namespace flowCards
                 var doc = new XmlDocument();
                 doc.LoadXml(sr.ReadToEnd());
 
-                //XmlNode node = doc.SelectSingleNode("Card//Contacts");
                 var promotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"true\"]");
                 var notPromotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"false\"]");
 
