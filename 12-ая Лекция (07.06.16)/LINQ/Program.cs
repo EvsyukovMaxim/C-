@@ -16,7 +16,7 @@ namespace LINQ
 
             foreach (var number in filteredNumbers)
             {
-                Console.WriteLine(numbers);
+                Console.WriteLine(number);
             }
         }
     }
