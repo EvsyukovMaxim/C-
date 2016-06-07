@@ -22,34 +22,22 @@ namespace flowCards
                 var promotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"true\"]");
                 var notPromotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"false\"]");
 
-
-                using (StreamWriter output = new StreamWriter(new FileStream(@"C:\Users\m.evsyukov\Desktop\promoCards.xml", FileMode.Create), Encoding.Unicode))
+                using (var streamWriter = new StreamWriter(@"C:\Users\m.evsyukov\Desktop\promoCards.xml"))
                 {
-                    using (XmlWriter xmlWriter = XmlWriter.Create(output, new XmlWriterSettings()))
+                    foreach (XmlNode node in promotionalNodes)
                     {
-                        foreach (XmlNode node in promotionalNodes)
-                        {
-                            node.WriteContentTo(xmlWriter);
-                            //promotionalDoc.ImportNode(node, false);
-                        }
-
+                        streamWriter.WriteLine(node.OuterXml);
                     }
                 }
 
-
-                //var promotionalDoc = new XmlDocument();
-                
-                //promotionalDoc.Save(@"C:\Users\m.evsyukov\Desktop\promoCards.xml");
-
-                //using (var sw = new XmlTextWriter(Console.Out))
-                //{
-                //    foreach (XmlNode node in promotionalNode)
-                //    {
-                //        node.Save(sw);
-                //    }
-                //}
+                using (var streamWriter = new StreamWriter(@"C:\Users\m.evsyukov\Desktop\notPromoCards.xml"))
+                {
+                    foreach (XmlNode node in notPromotionalNodes)
+                    {
+                        streamWriter.WriteLine(node.OuterXml);
+                    }
+                }
             }
         }
     }
 }
-// C:\Users\m.evsyukov\Desktop\flowCards.Card.xml
