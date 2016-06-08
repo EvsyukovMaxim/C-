@@ -15,17 +15,19 @@ namespace flowCards
         {
             using (StreamReader sr = new StreamReader(@"C:\Users\m.evsyukov\Desktop\flowCards.Card.xml"))
             {
-                var doc = new XmlDocument();
+                XmlDocument doc = new XmlDocument();
                 doc.LoadXml(sr.ReadToEnd());
 
-                var promotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"true\"]");
-                var notPromotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"false\"]");
+                XmlNodeList promotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"true\"]");
+                XmlNodeList notPromotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"false\"]");
+
+                
 
                 using (var streamWriter = new StreamWriter(@"C:\Users\m.evsyukov\Desktop\promoCards.xml"))
                 {
                     foreach (XmlNode node in promotionalNodes)
                     {
-                        streamWriter.WriteLine(node.OuterXml);
+                        streamWriter.WriteLine(node.Attributes["Value"]?.Value + " [" + node.Attributes["Description"]?.Value + "]");
                     }
                 }
 
@@ -33,7 +35,7 @@ namespace flowCards
                 {
                     foreach (XmlNode node in notPromotionalNodes)
                     {
-                        streamWriter.WriteLine(node.OuterXml);
+                        streamWriter.WriteLine(node.Attributes["Value"]?.Value + " [" + node.Attributes["Description"]?.Value + "]");
                     }
                 }
             }
