@@ -20,12 +20,8 @@ namespace Massive_Task2
 
             Array.Sort(numbers);
 
-            //for (int i = 0; i < n; i++)
-            //{
-            //    Console.Write(numbers[i] + " ");
-            //}
-
-            numbers.PrintArray();
+            //numbers.PrintArray();
+            numbers.ReturnArray("\'");
         }
     }
 }

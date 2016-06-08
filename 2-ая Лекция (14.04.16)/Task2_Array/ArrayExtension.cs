@@ -15,5 +15,13 @@ namespace Massive_Task2
                 Console.WriteLine(item);
             }
         }
+
+        public static void ReturnArray(this int[] array, string separator)
+        {
+            foreach (int item in array)
+            {
+                Console.Write($"{separator + item + separator} ");
+            }
+        }
     }
 }
