@@ -27,7 +27,7 @@ namespace flowCards
                 {
                     foreach (XmlNode node in promotionalNodes)
                     {
-                        streamWriter.WriteLine(node.Attributes["Value"]?.Value + " [" + node.Attributes["Description"]?.Value + "]");
+                        streamWriter.WriteLine($"<{node.Attributes["Value"]?.Value}> [<{node.Attributes["Description"]?.Value}>]");
                     }
                 }
 
@@ -35,7 +35,7 @@ namespace flowCards
                 {
                     foreach (XmlNode node in notPromotionalNodes)
                     {
-                        streamWriter.WriteLine(node.Attributes["Value"]?.Value + " [" + node.Attributes["Description"]?.Value + "]");
+                        streamWriter.WriteLine($"<{node.Attributes["Value"]?.Value}> [<{node.Attributes["Description"]?.Value}>]");
                     }
                 }
             }
