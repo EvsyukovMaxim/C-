@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,12 +17,16 @@ namespace Massive_Task2
             }
         }
 
-        public static void ReturnArray(this int[] array, string separator)
+        public static string ReturnArray(this int[] array, string separator)
         {
-            foreach (int item in array)
+            string a = "";
+            string[] stringArray = new string[array.Count()];
+            stringArray = Array.ConvertAll(array, element => element.ToString());
+            for (int i = 0; i < array.Count(); i++)
             {
-                Console.Write($"{separator + item + separator} ");
+                a = a + (separator + stringArray[i] + separator);
             }
+            return a;
         }
     }
 }
