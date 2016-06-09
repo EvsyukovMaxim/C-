@@ -24,7 +24,7 @@ namespace Massive_Task2
             stringArray = Array.ConvertAll(array, element => element.ToString());
             for (int i = 0; i < array.Count(); i++)
             {
-                a = a + (separator + stringArray[i] + separator);
+                a = a + (" " + separator + stringArray[i] + separator);
             }
             return a;
         }
