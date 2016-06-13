@@ -22,7 +22,15 @@ namespace Massive_Task2
             string a = "";
             for (int i = 0; i < array.Count(); i++)
             {
-                a = a + (" " + separator + array[i] + separator);
+                if (array[i] == array.Last())
+                {
+                    a = a + (array[i]);
+                }
+                else
+                {
+                    a = a + (array[i] + separator);
+                }
+
             }
             return a;
         }

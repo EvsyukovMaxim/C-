@@ -21,7 +21,7 @@ namespace Massive_Task2
             Array.Sort(numbers);
 
             //numbers.PrintArray();
-            Console.WriteLine(numbers.ReturnArray("\'"));
+            Console.WriteLine(numbers.ReturnArray(";"));
         }
     }
 }
