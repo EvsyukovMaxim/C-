@@ -24,7 +24,7 @@ namespace Massive_Task2
             {
                 if (array[i] == array.Last())
                 {
-                    a = a + (array[i]);
+                    a = a + array[i];
                 }
                 else
                 {
