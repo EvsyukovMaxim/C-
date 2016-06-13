@@ -13,30 +13,28 @@ namespace flowCards
     {
         static void Main(string[] args)
         {
-            using (StreamReader sr = new StreamReader(@"C:\Users\m.evsyukov\Desktop\flowCards.Card.xml"))
+            StreamReader sr = new StreamReader(@"C:\Users\m.evsyukov\Desktop\flowCards.Card.xml");
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml(sr.ReadToEnd());
+
+            XmlNodeList promotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"true\"]");
+            XmlNodeList notPromotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"false\"]");
+
+            sr.Close();
+
+            using (var streamWriter = new StreamWriter(@"C:\Users\m.evsyukov\Desktop\promoCards.xml"))
             {
-                XmlDocument doc = new XmlDocument();
-                doc.LoadXml(sr.ReadToEnd());
-
-                XmlNodeList promotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"true\"]");
-                XmlNodeList notPromotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"false\"]");
-
-                
-
-                using (var streamWriter = new StreamWriter(@"C:\Users\m.evsyukov\Desktop\promoCards.xml"))
+                foreach (XmlNode node in promotionalNodes)
                 {
-                    foreach (XmlNode node in promotionalNodes)
-                    {
-                        streamWriter.WriteLine($"<{node.Attributes["Value"]?.Value}> [<{node.Attributes["Description"]?.Value}>]");
-                    }
+                    streamWriter.WriteLine($"<{node.Attributes["Value"]?.Value}> [<{node.Attributes["Description"]?.Value}>]");
                 }
+            }
 
-                using (var streamWriter = new StreamWriter(@"C:\Users\m.evsyukov\Desktop\notPromoCards.xml"))
+            using (var streamWriter = new StreamWriter(@"C:\Users\m.evsyukov\Desktop\notPromoCards.xml"))
+            {
+                foreach (XmlNode node in notPromotionalNodes)
                 {
-                    foreach (XmlNode node in notPromotionalNodes)
-                    {
-                        streamWriter.WriteLine($"<{node.Attributes["Value"]?.Value}> [<{node.Attributes["Description"]?.Value}>]");
-                    }
+                    streamWriter.WriteLine($"<{node.Attributes["Value"]?.Value}> [<{node.Attributes["Description"]?.Value}>]");
                 }
             }
         }
