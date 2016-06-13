@@ -18,10 +18,10 @@ namespace flowCards
             XmlDocument doc = new XmlDocument();
             doc.LoadXml(sr.ReadToEnd());
 
+            sr.Close();
+
             XmlNodeList promotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"true\"]");
             XmlNodeList notPromotionalNodes = doc.SelectNodes("Card//Contacts//*[@IsPromotional=\"false\"]");
-
-            sr.Close();
 
             using (var streamWriter = new StreamWriter(@"C:\Users\m.evsyukov\Desktop\promoCards.xml"))
             {
