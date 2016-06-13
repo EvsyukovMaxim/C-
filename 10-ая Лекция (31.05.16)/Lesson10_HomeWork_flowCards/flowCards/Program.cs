@@ -13,6 +13,7 @@ namespace flowCards
     {
         static void Main(string[] args)
         {
+
             StreamReader sr = new StreamReader(@"C:\Users\m.evsyukov\Desktop\flowCards.Card.xml");
             XmlDocument doc = new XmlDocument();
             doc.LoadXml(sr.ReadToEnd());
