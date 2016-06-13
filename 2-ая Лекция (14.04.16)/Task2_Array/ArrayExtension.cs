@@ -20,11 +20,9 @@ namespace Massive_Task2
         public static string ReturnArray(this int[] array, string separator)
         {
             string a = "";
-            string[] stringArray = new string[array.Count()];
-            stringArray = Array.ConvertAll(array, element => element.ToString());
             for (int i = 0; i < array.Count(); i++)
             {
-                a = a + (" " + separator + stringArray[i] + separator);
+                a = a + (" " + separator + array[i] + separator);
             }
             return a;
         }
