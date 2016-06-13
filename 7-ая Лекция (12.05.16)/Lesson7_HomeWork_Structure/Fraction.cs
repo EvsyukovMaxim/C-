@@ -18,6 +18,10 @@ namespace Lesson7_HomeWork_Structure
             {
                 _denominator = denominator;
             }
+            else
+            {
+                throw new DivideByZeroException("Знаменатель не может быть отрицательным и равен нулю");
+            }
         }
         public static Fraction ReturnFraction(int numerator, int denominator)
         {
@@ -32,7 +36,7 @@ namespace Lesson7_HomeWork_Structure
             }
             else
             {
-                throw new InvalidOperationException("знаменатель не может быть отрицательным");
+                throw new InvalidOperationException("Знаменатель не может быть отрицательным");
             }
         }
 

@@ -42,5 +42,19 @@ namespace Tests_Fraction
             //Assert
             Assert.AreEqual(f1, Fraction.ReturnFraction(1, 2));
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(DivideByZeroException))]
+        public void FractionConstructor4()
+        {
+            //Arrange
+            Fraction f1 = new Fraction(1, 0);
+
+            //Act
+
+            //Assert
+
+            // Ждем эксепшн
+        }
     }
 }

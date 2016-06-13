@@ -22,6 +22,7 @@ namespace Tests_Fraction
         }
 
         [TestMethod]
+        [ExpectedException(typeof(DivideByZeroException))]
         public void DivisionFraction2()
         {
             //Arrange
@@ -32,7 +33,7 @@ namespace Tests_Fraction
             Fraction fn2 = f1.Division(f3);
 
             //Assert
-            Assert.AreEqual("0/2", fn2.ToString());
+            //Ждем эксепшн
         }
 
         [TestMethod]
@@ -46,7 +47,7 @@ namespace Tests_Fraction
             //Act
             Fraction fn3 = f3.Division(f4);
 
-            // Не работает эксепшн на инициализацию дробей с нулевым знаменателем ((( не понимаю почему, хотя в Program.cs срабатывает
+            // Ждем эксепшн
         }
     }
 }

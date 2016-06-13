@@ -22,12 +22,12 @@ namespace Tests_Fraction
         }
 
         [TestMethod]
+        [ExpectedException(typeof(DivideByZeroException))]
         public void AdditionFraction2()
         {
             //Arrange
             Fraction f1 = new Fraction(1, 2);
             Fraction f3 = new Fraction(1, 0);
-            Fraction f4 = new Fraction(0, -1);
 
             //Act
             Fraction fn2 = f1.Addition(f3);
@@ -37,18 +37,17 @@ namespace Tests_Fraction
         }
 
         [TestMethod]
+        [ExpectedException(typeof(DivideByZeroException))]
         public void AdditionFraction3()
         {
             //Arrange
-            Fraction f3 = new Fraction(1, 0);
+            Fraction f3 = new Fraction(1, 2);
             Fraction f4 = new Fraction(0, -1);
             //Act
             Fraction fn3 = f3.Addition(f4);
 
             //Assert
-            Assert.AreEqual("-1/0", fn3.ToString());
-
-            // Не работает эксепшн на инициализацию дробей с нулевым знаменателем ((( не понимаю почему, хотя в Program.cs срабатывает
+            //Ждем эксепшн на отрицательный знаменатель
         }
     }
 }
