@@ -22,7 +22,7 @@ namespace Massive_Task2
             string a = "";
             for (int i = 0; i < array.Count(); i++)
             {
-                if (array[i] == array.Last())
+                if (i == array.Count()-1)
                 {
                     a = a + array[i];
                 }

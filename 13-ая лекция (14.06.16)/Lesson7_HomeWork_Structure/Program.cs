@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson7_HomeWork_Structure
 {
+    [Serializable]
     class Program
     {
         static void Main(string[] args)
@@ -56,6 +57,9 @@ namespace Lesson7_HomeWork_Structure
             }
 
             Console.WriteLine("Сумма всех дробей равна: " + sum);
+
+
+            SaveToFile(sum);
         }
     }
 }

@@ -10,18 +10,20 @@ namespace Massive_Task2
     {
         static void Main(string[] args)
         {
-            int n = Convert.ToInt32(Console.ReadLine());
-            int[] numbers = new int [n];
-            for (int i = 0; i < n; i++)
-            {
-                int a = Convert.ToInt32(Console.ReadLine());
-                numbers[i] = a;
-            }
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //int[] numbers = new int [n];
+            //for (int i = 0; i < n; i++)
+            //{
+            //    int a = Convert.ToInt32(Console.ReadLine());
+            //    numbers[i] = a;
+            //}
 
-            Array.Sort(numbers);
+            //Array.Sort(numbers);
+
+            int[] anotherNumbers = new int[] { 2, 2, 1, 2 };
 
             //numbers.PrintArray();
-            Console.WriteLine(numbers.ReturnArray(";"));
+            Console.WriteLine(anotherNumbers.ReturnArray(";"));
         }
     }
 }

@@ -1,0 +1,15 @@
+D:\Repository_GitHub\CS\12.05.16\Lesson7_HomeWork_Structure\bin\Debug\Lesson7_HomeWork_Structure.exe.config
+D:\Repository_GitHub\CS\12.05.16\Lesson7_HomeWork_Structure\obj\Debug\Lesson7_HomeWork_Structure.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\12.05.16\Lesson7_HomeWork_Structure\bin\Debug\Lesson7_HomeWork_Structure.exe
+D:\Repository_GitHub\CS\12.05.16\Lesson7_HomeWork_Structure\bin\Debug\Lesson7_HomeWork_Structure.pdb
+D:\Repository_GitHub\CS\12.05.16\Lesson7_HomeWork_Structure\obj\Debug\Lesson7_HomeWork_Structure.exe
+D:\Repository_GitHub\CS\12.05.16\Lesson7_HomeWork_Structure\obj\Debug\Lesson7_HomeWork_Structure.pdb
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\bin\Debug\Lesson7_HomeWork_Structure.exe.config
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\obj\Debug\Lesson7_HomeWork_Structure.exe
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\obj\Debug\Lesson7_HomeWork_Structure.pdb
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\bin\Debug\Lesson7_HomeWork_Structure.exe
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\bin\Debug\Lesson7_HomeWork_Structure.pdb
+D:\Repository_GitHub\CS\7-ая Лекция (12.05.16)\Lesson7_HomeWork_Structure\obj\Debug\Lesson7_HomeWork_Structure.csprojResolveAssemblyReference.cache
+D:\Repository_GitHub\CS\13-ая лекция (14.06.16)\Lesson7_HomeWork_Structure\bin\Debug\Lesson7_HomeWork_Structure.exe.config
+D:\Repository_GitHub\CS\13-ая лекция (14.06.16)\Lesson7_HomeWork_Structure\obj\Debug\Lesson7_HomeWork_Structure.exe
+D:\Repository_GitHub\CS\13-ая лекция (14.06.16)\Lesson7_HomeWork_Structure\obj\Debug\Lesson7_HomeWork_Structure.pdb
