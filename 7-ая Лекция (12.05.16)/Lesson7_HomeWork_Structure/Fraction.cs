@@ -58,7 +58,7 @@ namespace Lesson7_HomeWork_Structure
                 f1._denominator = f1._denominator * f2._denominator;
                 return f1;
             }
-            else
+            
             {
                 f1._numerator = f1._numerator + f2._numerator;
                 f1._denominator = f2._denominator;
@@ -75,7 +75,7 @@ namespace Lesson7_HomeWork_Structure
                 f1._denominator = f1._denominator * f2._denominator;
                 return f1;
             }
-            else
+            
             {
                 f1._numerator = f1._numerator - f2._numerator;
                 f1._denominator = f2._denominator;
@@ -100,7 +100,7 @@ namespace Lesson7_HomeWork_Structure
                 f1._denominator = f1._denominator * f2._numerator;
                 return f1;
             }
-            else
+            
             {
                 throw new DivideByZeroException("Знаменатель не может быть равен нулю после деления");
                 //return f1;
