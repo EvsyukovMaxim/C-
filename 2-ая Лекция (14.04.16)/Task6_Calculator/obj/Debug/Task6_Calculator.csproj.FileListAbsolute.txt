@@ -4,3 +4,6 @@ D:\Repository_GitHub\CS\14.04.16\Task6_Calculator\bin\Debug\Task6_Calculator.exe
 D:\Repository_GitHub\CS\14.04.16\Task6_Calculator\bin\Debug\Task6_Calculator.pdb
 D:\Repository_GitHub\CS\14.04.16\Task6_Calculator\obj\Debug\Task6_Calculator.exe
 D:\Repository_GitHub\CS\14.04.16\Task6_Calculator\obj\Debug\Task6_Calculator.pdb
+F:\MySilly\Git\2-ая Лекция (14.04.16)\Task6_Calculator\bin\Debug\Task6_Calculator.exe.config
+F:\MySilly\Git\2-ая Лекция (14.04.16)\Task6_Calculator\obj\Debug\Task6_Calculator.exe
+F:\MySilly\Git\2-ая Лекция (14.04.16)\Task6_Calculator\obj\Debug\Task6_Calculator.pdb
