@@ -10,9 +10,3 @@ D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\obj\D
 D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\bin\Debug\HomeWork_BankClient.exe
 D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\bin\Debug\HomeWork_BankClient.pdb
 D:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\obj\Debug\HomeWork_BankClient.csprojResolveAssemblyReference.cache
-F:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\bin\Debug\HomeWork_BankClient.exe.config
-F:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\obj\Debug\HomeWork_BankClient.exe
-F:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\obj\Debug\HomeWork_BankClient.pdb
-F:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\bin\Debug\HomeWork_BankClient.exe
-F:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\bin\Debug\HomeWork_BankClient.pdb
-F:\Repository_GitHub\CS\6-ая Лекция (05.05.16)\HomeWork_BankClient\obj\Debug\HomeWork_BankClient.csprojResolveAssemblyReference.cache
