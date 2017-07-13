@@ -30,11 +30,11 @@ namespace Lesson7_HomeWork_Structure
             {
                 return example;
             }
-            else if (denominator == 0)
+            if (denominator == 0)
             {
                 throw new DivideByZeroException("Нельзя делить на ноль");
             }
-            else
+            
             {
                 throw new InvalidOperationException("Знаменатель не может быть отрицательным");
             }
